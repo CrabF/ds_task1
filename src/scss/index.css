@@ -1,0 +1,18 @@
+@import url("../../public/fonts/fonts.css");
+p {
+  color: aqua;
+}
+
+h2 {
+  color: red;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(174, 174, 174);
+}/*# sourceMappingURL=index.css.map */
