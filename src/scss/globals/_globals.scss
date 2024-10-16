@@ -56,14 +56,14 @@ $mainColors: (
 
 //Tag цвета
 $tagColors: (
-  pink: $pink,
+  pink-light: $pink,
   sky: $sky,
   violet: $violet,
   grass: $grass,
-  turquoise: $turquoise,
+  turquoise-light: $turquoise,
   tangerine: $tangerine,
   coral: $coral,
-  mint: $mint,
+  mint-light: $mint,
   marine: $marine,
 );
 
@@ -81,5 +81,7 @@ $textColors: (
 );
 
 body {
-  background-color: map-get($mainColors, gray35);
+  background-color: map-get($mainColors, gray5);
+  margin: 0;
+  padding: 0;
 }

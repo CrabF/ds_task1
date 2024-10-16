@@ -1,12 +1,5 @@
+@charset "UTF-8";
 @import url("../../public/fonts/fonts.css");
-p {
-  color: aqua;
-}
-
-h2 {
-  color: red;
-}
-
 *,
 *::after,
 *::before {
@@ -14,5 +7,114 @@ h2 {
 }
 
 body {
-  background-color: rgb(174, 174, 174);
+  background-color: rgb(242, 242, 242);
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  height: 72px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.header__content {
+  width: 1208px;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  margin: 16px auto;
+  justify-content: space-between;
+}
+
+.header__menu {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  width: 694px;
+  margin: 0;
+  padding: 0;
+}
+
+.header__menu-item {
+  height: 37px;
+  border: 1.2px rgb(232, 232, 232) solid;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 18px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.header__menu-item:last-of-type {
+  margin-right: 0;
+}
+.header__menu-item#Diseño:hover {
+  background-color: rgb(236, 149, 177);
+}
+.header__menu-item#Programación:hover {
+  background-color: rgb(164, 204, 254);
+}
+.header__menu-item#Gaming:hover {
+  background-color: rgb(190, 219, 57);
+}
+.header__menu-item#Marketing:hover {
+  background-color: rgb(255, 173, 32);
+}
+.header__menu-item#Software:hover {
+  background-color: rgb(172, 214, 222);
+}
+.header__menu-item#Carrera:hover {
+  background-color: rgb(174, 223, 214);
+}
+
+.header__menu-rigth {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.header__menu-link {
+  margin-left: 27px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+}
+.header__menu-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1.5px;
+  background-color: rgb(190, 219, 57);
+  transform: scaleX(0);
+  transition: transform 0.3s;
+}
+.header__menu-link:hover::after {
+  transform: scaleX(1);
+}
+
+.header__menu-image {
+  margin-left: 9px;
+  display: block;
+  height: 16px;
+  width: 16px;
+}
+
+.header__menu-search {
+  display: block;
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+}
+
+.header__logo {
+  display: block;
+  height: 40px;
+  width: 108px;
 }/*# sourceMappingURL=index.css.map */

@@ -1,3 +1,11 @@
-@import url('../../public/fonts/fonts.css');
-@import './globals/dov';
-@import './globals/globals';
+@import url("../../public/fonts/fonts.css");
+@import "./globals/globals";
+@import "./components/header/header";
+@import "./components/header/__content/header__content";
+@import "./components/header/__menu/header__menu";
+@import "./components/header/__menu-item/header__menu-item";
+@import "./components/header/__menu-right/header__menu-rigth";
+@import "./components/header/menu-link/header__menu-link";
+@import "./components/header/__menu-image/header__menu-image";
+@import "./components/header/__menu-search/header__menu-search";
+@import "./components/header/__logo/header__logo";
