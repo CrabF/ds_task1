@@ -41,7 +41,7 @@ $marine-dark: rgba(34, 201, 139, 1);
 
 //Main цвета
 $mainColors: (
-  black: $black,
+  black-dark: $black,
   gray80: $gray80,
   gray70: $gray70,
   gray35: $gray35,
@@ -49,7 +49,7 @@ $mainColors: (
   gray15: $gray15,
   gray5: $gray5,
   gray5tr20: $gray5tr20,
-  white: $white,
+  white-dark: $white,
   white90: $white90,
   pale: $pale,
 );
@@ -81,7 +81,29 @@ $textColors: (
 );
 
 body {
-  background-color: map-get($mainColors, gray5);
+  background-color: map-get($mainColors, white-dark);
+  color: map-get($mainColors, black-dark);
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  // overflow: hidden;
+}
+
+@mixin subtitleText {
+  font-family: "Nunito", sans-serif;
+  font-size: 18px;
+  line-height: 28.8px;
+  font-weight: 400;
+  color: map-get($mainColors, gray70);
+}
+
+@mixin accentText {
+  font-family: "Nunito", sans-serif;
+  font-size: 15px;
+  line-height: 21px;
+  font-weight: 400;
+  color: map-get($mainColors, gray35);
 }

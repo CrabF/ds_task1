@@ -7,9 +7,14 @@
 }
 
 body {
-  background-color: rgb(242, 242, 242);
+  background-color: rgb(252, 250, 249);
+  color: rgb(27, 31, 33);
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .header {
@@ -17,6 +22,12 @@ body {
   width: 100%;
   display: flex;
   flex-direction: row;
+}
+.header * {
+  font-family: "Nunito", sans-serif;
+  font-size: 15px;
+  line-height: 21px;
+  font-weight: 500;
 }
 
 .header__content {
@@ -32,7 +43,6 @@ body {
   display: flex;
   flex-direction: row;
   list-style-type: none;
-  width: 694px;
   margin: 0;
   padding: 0;
 }
@@ -117,4 +127,170 @@ body {
   display: block;
   height: 40px;
   width: 108px;
+}
+
+.article {
+  width: 1208px;
+  margin-top: 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.mask {
+  -webkit-mask-image: url("../../../../public/images/maskGirlLaptop.png");
+}
+
+.mask__image {
+  width: 480px;
+  height: 560px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: bottom;
+     object-position: bottom;
+}
+
+.mask__image-stiker {
+  height: 180px;
+  width: 180px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transition: transform 2s ease-in-out;
+}
+.mask__image-stiker:hover {
+  transform: rotate(360deg);
+}
+
+.article__container {
+  position: relative;
+  width: 480px;
+  height: 560px;
+}
+.article__container * {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.article__content {
+  width: 688px;
+  height: 468px;
+  display: flex;
+  flex-direction: column;
+}
+
+.article__content-tags {
+  height: 37px;
+}
+.article__content-tags * {
+  font-family: "Nunito", sans-serif;
+  font-size: 15px;
+  line-height: 21px;
+  font-weight: 400;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.article__content-list {
+  align-items: center;
+}
+
+.article__content-list-tag {
+  margin-right: 10px;
+  cursor: pointer;
+  color: rgb(148, 172, 35);
+}
+.article__content-list-tag:first-of-type {
+  font-weight: 500;
+  height: 37px;
+  color: rgb(27, 31, 33);
+  background-color: rgb(190, 219, 57);
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 18px;
+  margin-right: 10px;
+}
+.article__content-list-tag:last-of-type {
+  margin: 0;
+}
+
+.article__title {
+  font-family: "ArchivoBlack", sans-serif;
+  font-size: 36px;
+  line-height: 43.2px;
+  font-weight: 400;
+  margin: 18px 0 0;
+}
+
+.article__subtitle {
+  font-family: "Nunito", sans-serif;
+  font-size: 18px;
+  line-height: 28.8px;
+  font-weight: 400;
+  color: rgb(117, 119, 120);
+  width: 480px;
+  margin: 16px 0 0;
+}
+
+.article__accent {
+  display: flex;
+  flex-direction: row;
+  margin-top: 18px;
+  font-family: "Nunito", sans-serif;
+  font-size: 15px;
+  line-height: 21px;
+  font-weight: 400;
+  color: rgb(174, 174, 174);
+}
+.article__accent img {
+  display: block;
+  height: 16px;
+  width: 16px;
+}
+.article__accent * {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+.article__accent span:first-of-type {
+  margin-right: 24px;
+}
+.article__accent p {
+  margin-left: 8px;
+}
+
+.article__button {
+  margin-top: 56px;
+  width: 232px;
+  height: 59px;
+  border-radius: 40px;
+  background-color: rgb(190, 219, 57);
+  border: none;
+  outline: 2px solid rgb(27, 31, 33);
+  outline-offset: -7px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28.8px;
+  cursor: pointer;
+}
+
+.backgroundLine {
+  display: block;
+  position: absolute;
+  z-index: -1;
+  top: -30;
+  left: -100;
+  transform: rotate(-3deg);
 }/*# sourceMappingURL=index.css.map */

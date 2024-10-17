@@ -1,0 +1,15 @@
+.article__content-tags {
+  height: 37px;
+  & * {
+    font-family: "Nunito", sans-serif;
+    font-size: 15px;
+    line-height: 21px;
+    font-weight: 400;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+}

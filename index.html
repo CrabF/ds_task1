@@ -3,7 +3,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./src/scss/index.css" />
-    <title>Document</title>
+    <title>First task</title>
   </head>
   <body>
     <header class="header">
@@ -37,20 +37,76 @@
         <nav class="header__menu-rigth">
           <img
             class="header__menu-search"
-            src="./public/images/loupe.svg"
+            src="./public/images/loupeIcon.svg"
             alt="loupe"
           />
           <a class="header__menu-link"
             >EBAC<img
               class="header__menu-image"
-              src="./public/images/arrow.svg"
+              src="./public/images/arrowIcon.svg"
               alt="arrow"
             />
           </a>
         </nav>
       </div>
     </header>
-    <main></main>
+    <main>
+      <section class="article">
+        <div class="article__container">
+          <figure class="mask">
+            <img
+              class="mask__image"
+              src="./public/images/girlLaptop.png"
+              alt="girl with laptop"
+            />
+          </figure>
+          <img
+            class="mask__image-stiker"
+            src="./public/images/stiker.png"
+            alt="stiker"
+          />
+        </div>
+        <article class="article__content">
+          <header class="article__content-tags">
+            <ul class="article__content-list">
+              <li class="article__content-list-tag">Gaming</li>
+              <li class="article__content-list-tag">Artículo</li>
+              <li class="article__content-list-tag">Niños</li>
+              <li class="article__content-list-tag">Proyecto</li>
+            </ul>
+          </header>
+          <main>
+            <h2 class="article__title">
+              El Artista Técnico, cuando la programación y el diseño de juegos
+              se juntan
+            </h2>
+            <p class="article__subtitle">
+              ¡Es posible unir la pasión por los dos universos! ¿Habías
+              escuchado este término antes? Si no te suena de nada, no te
+              sientas mal, el concepto es nuevo. ¡Nosotros te lo explicamos!
+            </p>
+          </main>
+          <footer>
+            <span class="article__accent">
+              <span
+                ><img src="./public/images/calendarIcon.svg" alt="calendar" />
+                <p>2 de junio de 2022</p></span
+              >
+              <span>
+                <img src="./public/images/timerIcon.svg" alt="timer" />
+                <p>10 min</p></span
+              >
+            </span>
+            <button class="article__button">Leer el artículo</button>
+          </footer>
+        </article>
+        <img
+          class="backgroundLine"
+          src="./public/images/lineBackground.png"
+          alt="line background"
+        />
+      </section>
+    </main>
     <footer></footer>
   </body>
   <script src="./js/index.js"></script>
