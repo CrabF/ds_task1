@@ -1,0 +1,7 @@
+.article__content-list-tag_marine {
+  color: map-get($textColors, marine-dark);
+  &:first-of-type {
+    color: map-get($mainColors, black-dark);
+    background-color: map-get($tagColors, marine);
+  }
+}

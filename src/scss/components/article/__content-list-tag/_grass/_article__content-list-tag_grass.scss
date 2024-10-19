@@ -1,0 +1,7 @@
+.article__content-list-tag_grass {
+  color: map-get($textColors, grass-dark);
+  &:first-of-type {
+    color: map-get($mainColors, black-dark);
+    background-color: map-get($tagColors, grass);
+  }
+}

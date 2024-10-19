@@ -1,0 +1,24 @@
+.article__accent_spec {
+  display: flex;
+  flex-direction: column;
+  @include accentText;
+  & img {
+    display: block;
+    height: 16px;
+    width: 16px;
+  }
+  & * {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
+  }
+  & span:first-of-type {
+    margin-bottom: 8px;
+  }
+  & p {
+    margin-right: 8px;
+  }
+}

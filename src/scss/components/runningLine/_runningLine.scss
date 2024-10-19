@@ -1,0 +1,46 @@
+.runningLine {
+  background-color: map-get($tagColors, turquoise-light);
+  height: 120px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  overflow: hidden;
+  max-width: 1440px;
+  margin-top: 131px;
+  transform: rotate(-4deg);
+  & * {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    @include runningLineText;
+  }
+  & img {
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin-right: 43px;
+  }
+  & div {
+    animation: marquee 4s linear infinite;
+  }
+  & span {
+    padding-right: 43px;
+    white-space: nowrap;
+  }
+
+  & div:nth-child(2) {
+    margin-right: 100%;
+  }
+
+  @keyframes marquee {
+    from {
+      transform: translateX(-50%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+}

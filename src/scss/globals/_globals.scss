@@ -89,7 +89,6 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  // overflow: hidden;
 }
 
 @mixin subtitleText {
@@ -106,4 +105,12 @@ body {
   line-height: 21px;
   font-weight: 400;
   color: map-get($mainColors, gray35);
+}
+
+@mixin runningLineText {
+  font-family: "ArchivoBlack", sans-serif;
+  font-size: 58px;
+  line-height: 69.6px;
+  letter-spacing: 1%;
+  font-weight: 400;
 }
