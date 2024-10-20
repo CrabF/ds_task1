@@ -158,10 +158,6 @@ body {
   position: absolute;
   top: 0;
   right: 0;
-  transition: transform 2s ease-in-out;
-}
-.mask__image-stiker:hover {
-  transform: rotate(360deg);
 }
 
 .article__container {
@@ -283,9 +279,6 @@ body {
   display: block;
   position: absolute;
   z-index: -1;
-  top: -30;
-  left: -100;
-  transform: rotate(-3deg);
 }
 
 .runningLine {
@@ -309,20 +302,19 @@ body {
   font-family: "ArchivoBlack", sans-serif;
   font-size: 58px;
   line-height: 69.6px;
-  letter-spacing: 1%;
   font-weight: 400;
 }
 .runningLine img {
   display: block;
   width: 40px;
   height: 40px;
-  margin-right: 43px;
+  margin-right: 48px;
 }
 .runningLine div {
   animation: marquee 4s linear infinite;
 }
 .runningLine span {
-  padding-right: 43px;
+  padding-right: 48px;
   white-space: nowrap;
 }
 .runningLine div:nth-child(2) {
@@ -344,13 +336,18 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  position: relative;
 }
 
 .fiveArticles__smallArticle {
   width: 584px;
-  height: 627px;
   display: flex;
   flex-direction: column;
+  transition: transform 2s linear;
+}
+.fiveArticles__smallArticle:hover .mask__image-stiker_animation {
+  transition: transform 2s linear;
+  transform: rotate(360deg);
 }
 
 .mask1 {
@@ -424,7 +421,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: 136px;
+  margin: 136px 0;
 }
 
 .mask3 {
@@ -541,4 +538,140 @@ body {
 .article__subtitle_moreWidth {
   width: 688px;
   margin-top: 8px;
+}
+
+.mask__image-stiker_specSize {
+  width: 240px;
+  transform: rotate(-5deg);
+}
+
+.mask4 {
+  -webkit-mask-image: url("../../../../public/images/cssMasks/bigSize/4.png");
+  margin-bottom: 32px;
+}
+
+.article__content-list-tag_tangerine {
+  color: rgb(239, 151, 0);
+}
+.article__content-list-tag_tangerine:first-of-type {
+  color: rgb(27, 31, 33);
+  background-color: rgb(255, 173, 32);
+}
+
+.mask5 {
+  -webkit-mask-image: url("../../../../public/images/cssMasks/bigSize/5.png");
+  margin-bottom: 32px;
+}
+
+.article__content-list-tag_turquoise {
+  color: rgb(87, 172, 188);
+}
+.article__content-list-tag_turquoise:first-of-type {
+  color: rgb(27, 31, 33);
+  background-color: rgb(172, 214, 222);
+}
+
+.backgroundLine_pos1 {
+  top: -30;
+  left: -100;
+  transform: rotate(-3deg);
+}
+
+.backgroundLine_pos2 {
+  top: -165;
+  left: -100;
+}
+
+.runningLine_webinars-top {
+  transform: rotate(-3deg);
+  background-color: rgb(255, 173, 32);
+  margin: 0;
+  position: absolute;
+  top: 0;
+}
+.runningLine_webinars-top div:nth-child(3) {
+  margin-right: 100%;
+}
+.runningLine_webinars-top div:nth-child(2) {
+  margin-right: 0;
+}
+
+.runningLine_webinars-bottom {
+  transform: rotate(2deg);
+  background-color: rgb(254, 109, 68);
+  margin: 0;
+  position: absolute;
+  bottom: 0;
+}
+.runningLine_webinars-bottom div:nth-child(3) {
+  margin-right: 100%;
+}
+.runningLine_webinars-bottom div:nth-child(2) {
+  margin-right: 0;
+}
+
+.webinars {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 1064px;
+  margin-top: 136px;
+}
+
+.webinars__background {
+  background-color: rgb(27, 31, 33);
+  height: 900px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.webinars__content {
+  width: 1208px;
+  height: 576px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.webinars__content span {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.webinars__content h2 {
+  font-family: "ArchivoBlack", sans-serif;
+  font-size: 46px;
+  line-height: 55.2px;
+  font-weight: 400;
+  color: rgb(252, 250, 249);
+  margin: 0;
+  padding: 0;
+}
+.webinars__content button {
+  font-family: "Nunito", sans-serif;
+  font-size: 18px;
+  line-height: 28.8px;
+  font-weight: 700;
+  color: rgb(252, 250, 249);
+  width: 280px;
+  height: 64px;
+  border-radius: 40px;
+  background-color: rgb(152, 83, 244);
+  cursor: pointer;
+}
+
+.webinars__cards {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.mask__image-stiker_animation {
+  transition: transform 1.5s linear;
 }/*# sourceMappingURL=index.css.map */

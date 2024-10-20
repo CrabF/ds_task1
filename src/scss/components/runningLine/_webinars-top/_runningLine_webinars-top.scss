@@ -1,0 +1,13 @@
+.runningLine_webinars-top {
+  transform: rotate(-3deg);
+  background-color: map-get($tagColors, tangerine);
+  margin: 0;
+  position: absolute;
+  top: 0;
+  & div:nth-child(3) {
+    margin-right: 100%;
+  }
+  & div:nth-child(2) {
+    margin-right: 0;
+  }
+}

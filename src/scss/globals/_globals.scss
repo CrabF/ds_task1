@@ -111,6 +111,21 @@ body {
   font-family: "ArchivoBlack", sans-serif;
   font-size: 58px;
   line-height: 69.6px;
-  letter-spacing: 1%;
   font-weight: 400;
+}
+
+@mixin webinarsTitle {
+  font-family: "ArchivoBlack", sans-serif;
+  font-size: 46px;
+  line-height: 55.2px;
+  font-weight: 400;
+  color: map-get($mainColors, white-dark);
+}
+
+@mixin webinarsButtonText {
+  font-family: "Nunito", sans-serif;
+  font-size: 18px;
+  line-height: 28.8px;
+  font-weight: 700;
+  color: map-get($mainColors, white-dark);
 }

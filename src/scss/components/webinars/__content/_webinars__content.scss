@@ -1,0 +1,26 @@
+.webinars__content {
+  width: 1208px;
+  height: 576px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  & span {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  & h2 {
+    @include webinarsTitle;
+    margin: 0;
+    padding: 0;
+  }
+  & button {
+    @include webinarsButtonText;
+    width: 280px;
+    height: 64px;
+    border-radius: 40px;
+    background-color: map-get($textColors, violet-dark);
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,7 @@
+.article__content-list-tag_tangerine {
+  color: map-get($textColors, tangerine-dark);
+  &:first-of-type {
+    color: map-get($mainColors, black-dark);
+    background-color: map-get($tagColors, tangerine);
+  }
+}
