@@ -22,6 +22,7 @@
     height: 64px;
     border-radius: 40px;
     background-color: map-get($textColors, violet-dark);
+    border: none;
     cursor: pointer;
   }
 }

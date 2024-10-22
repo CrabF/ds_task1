@@ -8,6 +8,7 @@
   position: absolute;
   top: 843;
   width: 100vw;
+  z-index: 1;
   transform: rotate(-4deg);
   & * {
     display: flex;

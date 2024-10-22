@@ -154,3 +154,43 @@ body {
   font-weight: 500;
   color: map-get($mainColors, white-dark);
 }
+
+@mixin subscribeTitle {
+  font-family: "ArchivoBlack", sans-serif;
+  font-size: 36px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: map-get($mainColors, white-dark);
+}
+
+@mixin subscribeSubTitle {
+  font-family: "Nunito", sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+  font-weight: 400;
+  color: map-get($mainColors, white-dark);
+}
+
+@mixin subscribeAdditionalText {
+  font-family: "Nunito", sans-serif;
+  font-size: 15px;
+  line-height: 1.4;
+  font-weight: 400;
+  color: map-get($mainColors, white-dark);
+}
+
+@mixin subscribeInputText {
+  font-family: "Nunito", sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+  font-weight: 500;
+  color: map-get($mainColors, gray15);
+}
+
+@mixin subscribeButtonText {
+  font-family: "Nunito", sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+  font-weight: 700;
+  color: map-get($mainColors, white-dark);
+}
