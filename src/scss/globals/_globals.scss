@@ -89,6 +89,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  overflow-x: hidden;
 }
 
 @mixin subtitleText {
@@ -127,5 +128,29 @@ body {
   font-size: 18px;
   line-height: 28.8px;
   font-weight: 700;
+  color: map-get($mainColors, white-dark);
+}
+
+@mixin webinarsCardName {
+  font-family: "ArchivoBlack", sans-serif;
+  font-size: 26px;
+  line-height: 31.2px;
+  font-weight: 400;
+  color: map-get($mainColors, white-dark);
+}
+
+@mixin webinarsCardTitle {
+  font-family: "ArchivoBlack", sans-serif;
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 400;
+  color: map-get($mainColors, white-dark);
+}
+
+@mixin webinarsCardAdditionalText {
+  font-family: "Nunito", sans-serif;
+  font-size: 15px;
+  line-height: 21px;
+  font-weight: 500;
   color: map-get($mainColors, white-dark);
 }

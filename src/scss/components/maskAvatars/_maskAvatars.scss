@@ -1,0 +1,10 @@
+.maskAvatars {
+  -webkit-mask-image: url("../../../../public/images/cssMasks/smallSize/avatar.png");
+  margin-right: 20px;
+  & img {
+    display: block;
+    width: 64px;
+    height: 64px;
+    object-fit: cover;
+  }
+}

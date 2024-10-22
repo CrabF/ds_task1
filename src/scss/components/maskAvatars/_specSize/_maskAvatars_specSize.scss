@@ -1,0 +1,8 @@
+.maskAvatars_specSize {
+  width: 64px;
+  height: 64px;
+  img {
+    transform: scale(2);
+    object-position: 0 10px;
+  }
+}

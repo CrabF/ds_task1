@@ -1,10 +1,11 @@
 .webinars__content {
   width: 1208px;
   height: 576px;
+  margin-top: 205px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  & span {
+  & span:first-child {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
