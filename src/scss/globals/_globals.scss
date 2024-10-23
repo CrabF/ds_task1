@@ -103,7 +103,7 @@ body {
 @mixin accentText {
   font-family: "Nunito", sans-serif;
   font-size: 15px;
-  line-height: 21px;
+  line-height: 1.4;
   font-weight: 400;
   color: map-get($mainColors, gray35);
 }
@@ -111,7 +111,7 @@ body {
 @mixin runningLineText {
   font-family: "ArchivoBlack", sans-serif;
   font-size: 58px;
-  line-height: 69.6px;
+  line-height: 1.2;
   font-weight: 400;
 }
 
@@ -120,14 +120,6 @@ body {
   font-size: 46px;
   line-height: 55.2px;
   font-weight: 400;
-  color: map-get($mainColors, white-dark);
-}
-
-@mixin webinarsButtonText {
-  font-family: "Nunito", sans-serif;
-  font-size: 18px;
-  line-height: 28.8px;
-  font-weight: 700;
   color: map-get($mainColors, white-dark);
 }
 
@@ -147,10 +139,10 @@ body {
   color: map-get($mainColors, white-dark);
 }
 
-@mixin webinarsCardAdditionalText {
+@mixin text_15_M_SLS {
   font-family: "Nunito", sans-serif;
   font-size: 15px;
-  line-height: 21px;
+  line-height: 1.4;
   font-weight: 500;
   color: map-get($mainColors, white-dark);
 }
@@ -179,7 +171,7 @@ body {
   color: map-get($mainColors, white-dark);
 }
 
-@mixin subscribeInputText {
+@mixin inputText {
   font-family: "Nunito", sans-serif;
   font-size: 18px;
   line-height: 1.6;
@@ -187,10 +179,18 @@ body {
   color: map-get($mainColors, gray15);
 }
 
-@mixin subscribeButtonText {
+@mixin buttonText {
   font-family: "Nunito", sans-serif;
   font-size: 18px;
   line-height: 1.6;
   font-weight: 700;
   color: map-get($mainColors, white-dark);
+}
+
+@mixin footerAdditionalText {
+  font-family: "Nunito", sans-serif;
+  font-size: 13px;
+  line-height: 1.6;
+  font-weight: 500;
+  color: map-get($mainColors, gray35);
 }

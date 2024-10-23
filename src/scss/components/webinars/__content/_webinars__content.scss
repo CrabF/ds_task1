@@ -17,12 +17,26 @@
     padding: 0;
   }
   & button {
-    @include webinarsButtonText;
+    @include buttonText;
     width: 280px;
     height: 64px;
     border-radius: 40px;
     background-color: map-get($textColors, violet-dark);
-    border: none;
+    border: inherit;
     cursor: pointer;
+    outline: none;
+    
+    &:disabled {
+      opacity: 60%;
+    }
+    &:active {
+      background-color: map-get($textColors, pink-dark);
+    }
+    &:hover {
+      background-color: map-get($textColors, pink-dark);
+    }
+    &:focus {
+      border: 2px solid map-get($mainColors, white-dark);
+    }
   }
 }

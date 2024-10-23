@@ -1,0 +1,7 @@
+.footer {
+  width: 100vw;
+  background-color: map-get($mainColors, black-dark);
+  height: 649px;
+  display: flex;
+  justify-content: center;
+}

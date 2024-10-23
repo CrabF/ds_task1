@@ -17,7 +17,7 @@
     max-width: 584px;
   }
   & input[type="text"] {
-    @include subscribeInputText;
+    @include inputText;
     color: map-get($mainColors, white-dark);
     width: 280px;
     height: 49px;
@@ -28,14 +28,22 @@
     background-color: inherit;
     padding: 0 24px;
     margin-right: 16px;
+    outline: 0;
 
     &::placeholder {
-      @include subscribeInputText;
+      @include inputText;
+    }
+    &:disabled {
+      opacity: 60%;
+    }
+    &:focus {
+      border: 2px solid map-get($mainColors, black-dark);
     }
   }
   & div {
     display: flex;
     margin-top: 88px;
+
     & button {
       width: 280px;
       height: 49px;
@@ -46,19 +54,35 @@
       background-color: map-get($textColors, coral-dark);
       border: none;
       cursor: pointer;
-      @include subscribeButtonText;
+      @include buttonText;
+      outline: 0;
+
+      &:hover {
+        background-color: map-get($mainColors, black-dark);
+      }
+      &:disabled {
+        opacity: 60%;
+      }
+      &:active {
+        background-color: map-get($mainColors, black-dark);
+      }
+      &:focus {
+        border: 2px solid map-get($mainColors, black-dark);
+      }
     }
   }
 
   & span {
     display: flex;
     margin-top: 16px;
+
     & input[type="checkbox"] {
       width: 24px;
       height: 24px;
       border-radius: 4px;
       margin-right: 16px;
     }
+
     & > p {
       @include subscribeAdditionalText;
     }

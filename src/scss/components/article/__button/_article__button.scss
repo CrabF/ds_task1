@@ -7,9 +7,26 @@
   border: none;
   outline: 2px solid map-get($mainColors, black-dark);
   outline-offset: -7px;
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   font-weight: 500;
   font-size: 18px;
   line-height: 28.8px;
   cursor: pointer;
+
+  &:hover {
+    background-color: map-get($mainColors, black-dark);
+    @include buttonText;
+  }
+  &:disabled {
+    opacity: 60%;
+  }
+  &:active {
+    background-color: map-get($mainColors, black-dark);
+    @include buttonText;
+  }
+  &:focus {
+    outline: 0;
+    outline-offset: 0;
+    border: 2px solid map-get($mainColors, black-dark);
+  }
 }
