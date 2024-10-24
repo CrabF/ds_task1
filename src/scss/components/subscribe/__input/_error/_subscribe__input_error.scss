@@ -1,0 +1,8 @@
+.subscribe__input_error {
+  border: 2px solid map-get($tagColors, tangerine);
+  padding: 0 50px 0 24px !important;
+
+  &:focus {
+    border: 2px solid map-get($tagColors, tangerine) !important;
+  }
+}

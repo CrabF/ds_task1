@@ -489,7 +489,7 @@
                 </footer>
               </article>
               <img
-                class="webinars__back"
+                class="webinars__back webinars__back_pos1"
                 src="./public/images/webinars/miniLine1.svg"
                 alt="backgroundLine"
               />
@@ -540,7 +540,7 @@
                 </footer>
               </article>
               <img
-                class="webinars__back"
+                class="webinars__back webinars__back_pos2"
                 src="./public/images/webinars/miniLine2.svg"
                 alt="backgroundLine"
               />
@@ -567,7 +567,7 @@
                     <p>Próximamente</p>
                     <p>Demonstração</p>
                   </span>
-                  <span class="article__accent">
+                  <span class="article__accent article__accent_webinars">
                     <span>
                       <img
                         src="./public/images/calendarIconWhite.svg"
@@ -586,7 +586,7 @@
                 </footer>
               </article>
               <img
-                class="webinars__back"
+                class="webinars__back webinars__back_pos3"
                 src="./public/images/webinars/miniLine3.svg"
                 alt="backgroundLine"
               />
@@ -739,18 +739,38 @@
               transforma la experiencia del Usuario a través de elementos
               textuales.
             </p>
-            <div>
-              <input placeholder="Su correo electrónico" type="text" />
-              <button>Enviar</button>
+            <form novalidate>
+              <div>
+                <div class="subscribe__input-container">
+                  <input
+                    class="subscribe__input_default"
+                    placeholder="Su correo electrónico"
+                    type="email"
+                  />
+                  <span class="subscribe__span-error"
+                    >Formato de email inválido, verifique a ortografia</span
+                  >
+                </div>
+                <button>Enviar</button>
+              </div>
+              <span>
+                <input type="checkbox" id="checkbox1" />
+                <label for="checkbox1"></label>
+                <p>
+                  Confirmo que he leído, acepto y entiendo los
+                  <u>términos y condiciones</u>, así como el
+                  <u>aviso de privacidad</u>
+                </p>
+              </span>
+            </form>
+            <div class="subscribe__success-form">
+              Fantástico! Espera La primera carta
+              <img
+                class="subscribe__success-form-stiker"
+                src="./public/images/subscribe/success.svg"
+                alt="success"
+              />
             </div>
-            <span>
-              <input type="checkbox" name="" id="" />
-              <p>
-                Confirmo que he leído, acepto y entiendo los
-                <u>términos y condiciones</u>, así como el
-                <u>aviso de privacidad</u>
-              </p>
-            </span>
             <img
               class="backgroundLine backgroundLine_posSubscribe"
               src="./public/images/subscribe/lineBackground.svg"
@@ -827,11 +847,11 @@
         <div class="footer__content-up">
           <div>
             <span>
-              <img src="./public/images/footer/logo.svg" alt="  logo" />
+              <img src="./public/images/footer/logo.svg" alt="logo" />
               <img src="./public/images/footer/img.png" alt="award" />
             </span>
             <div>
-              <input placeholder="Su correo electrónico" type="text" />
+              <input placeholder="Su correo electrónico" type="email" />
               <button>Suscribirse al boletín</button>
             </div>
           </div>
@@ -976,11 +996,11 @@
       src="./public/images/line2Background.svg"
       alt="line background"
     />
-    <!-- <img
+    <img
       class="backgroundLine backgroundLine_posWebinars"
-      src="./public/images/webinars/lineBackground.svg"
+      src="./public/images/webinars/threeLinesBackground.svg"
       alt="line background"
-    /> -->
+    />
   </body>
   <script src="./js/index.js"></script>
 </html>

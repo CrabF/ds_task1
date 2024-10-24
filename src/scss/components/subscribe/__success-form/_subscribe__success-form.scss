@@ -1,0 +1,13 @@
+.subscribe__success-form {
+  width: 576px;
+  height: 49px;
+  border-radius: 88px;
+  padding-left: 24px;
+  background-color: map-get($mainColors, white-dark);
+  @include buttonText;
+  align-items: center;
+  position: relative;
+  color: map-get($textColors, turquoise-dark);
+  margin-top: 146px;
+  display: none;
+}

@@ -1,6 +1,6 @@
 .webinars {
   position: relative;
-  height: 1064px;
+  height: 1003px;
   margin-top: 155px;
   width: 100vw;
   display: flex;
@@ -12,7 +12,7 @@
     z-index: -1;
     height: 700px;
     width: 120%;
-    transform: rotate(-3deg);
+    transform: rotate(-3deg) translateX(-50px);
     top: 2;
     left: 0;
     right: 0;
@@ -25,7 +25,7 @@
     z-index: -1;
     height: 600px;
     width: 120%;
-    transform: rotate(2deg);
+    transform: rotate(2deg) translateX(-50px);
     left: 0;
     right: 0;
     bottom: 20;
