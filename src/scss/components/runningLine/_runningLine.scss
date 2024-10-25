@@ -43,4 +43,20 @@
       transform: translateX(0);
     }
   }
+
+  @media (min-width: 768px) and (max-width: 1279px) {
+    & * {
+      @include tablet_H1;
+    }
+    &.runningLine {
+      height: 80px;
+      transform: rotate(-3deg);
+    }
+    &.runningLine_firstArticle {
+      top: 906;
+    }
+    &.runningLine_webinars-bottom {
+      transform: rotate(3deg);
+    }
+  }
 }

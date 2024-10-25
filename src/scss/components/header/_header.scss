@@ -10,4 +10,30 @@
   top: 0;
   z-index: 2;
   transition: transform 0.3s ease;
+
+  @media (min-width: 768px) and (max-width: 1279px) {
+    height: 133px;
+    width: 704px;
+    position: relative;
+
+    & .header__logo {
+      width: 108px;
+    }
+
+    & .header__menu-item {
+      margin-right: 12px;
+      white-space: nowrap;
+    }
+
+    & .header__menu {
+      width: 704px;
+      margin-top: 70px;
+      align-self: flex-end;
+      position: absolute;
+      top: 10;
+    }
+    & .header__menu-rigth {
+      width: 114px;
+    }
+  }
 }

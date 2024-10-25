@@ -31,4 +31,86 @@
     bottom: 20;
     background-color: map-get($mainColors, black-dark);
   }
+
+  @media (min-width: 768px) and (max-width: 1279px) {
+    &.webinars {
+      height: 1175px;
+      margin-top: 217px;
+      & .webinars__content {
+        width: 704px;
+        margin-top: 164px;
+        & > span {
+          margin-bottom: 64px;
+          & h2 {
+            @include tablet_H2;
+          }
+        }
+        & .webinars__cards {
+          flex-wrap: wrap;
+          & .webinars__card {
+            width: 340px;
+            height: 401px;
+            padding: 24px;
+            align-items: normal;
+            justify-content: flex-start;
+            & article {
+              grid-template-rows: 65px auto 1fr;
+              width: auto;
+              & p {
+                width: auto;
+              }
+              & main {
+                & h4 {
+                  width: auto;
+                }
+              }
+            }
+            & h5 {
+              margin-top: 6px;
+            }
+            & h4 {
+              width: 292px;
+              @include tablet_H4;
+              color: map-get($mainColors, white-dark);
+            }
+            & .article__accent {
+              & span:first-of-type {
+                width: 176px;
+                margin-right: 51px;
+              }
+              & span:last-of-type {
+                width: 65px;
+              }
+            }
+          }
+          & .webinars__card_coralColor {
+            & main {
+              margin-top: 30px;
+            }
+          }
+          & .webinars__card_turquoiseColor {
+            & main {
+              width: 250px;
+            }
+          }
+          & .webinars__card:nth-of-type(3) {
+            flex-grow: 1;
+            margin-top: 24px;
+            height: 272px;
+            & footer {
+              & span:first-of-type {
+                margin: 0;
+              }
+              & .article__accent {
+                & span {
+                  margin-top: 10;
+                  width: auto;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }

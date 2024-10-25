@@ -6,4 +6,102 @@
   flex-direction: row;
   justify-content: space-between;
   position: relative;
+
+  @media (min-width: 768px) and (max-width: 1279px) {
+    width: 704px;
+    margin-top: 200px;
+    & .fiveArticles__smallArticle {
+      width: 340px;
+      & .mask1 {
+        -webkit-mask-image: url(../../../../public/images/cssMasks/mediumSize/5.png);
+        margin-bottom: 24px;
+      }
+      & .mask1__image {
+        width: 340px;
+        height: 224px;
+      }
+      & .article__content-list-tag:first-of-type {
+        margin-right: 16px;
+      }
+      & .article__content-tags {
+        margin-bottom: 16px;
+      }
+      & .article__title_lessSize {
+        @include tablet_H4;
+      }
+      & .article__subtitle_lessWidth {
+        width: auto;
+      }
+      & .article__accent span:first-of-type {
+        margin-right: 26px;
+      }
+      & .mask2 {
+        -webkit-mask-image: url(../../../../public/images/cssMasks/mediumSize/1.png);
+        margin-bottom: 24px;
+      }
+      & .mask4 {
+        -webkit-mask-image: url(../../../../public/images/cssMasks/mediumSize/3.png);
+        margin-bottom: 24px;
+      }
+      & .mask__image-stiker_specSize {
+        width: 167px;
+        top: -11px;
+        right: -4px;
+        height: auto;
+        transform: rotate(16deg);
+      }
+      & .mask5 {
+        -webkit-mask-image: url(../../../../public/images/cssMasks/mediumSize/4.png);
+        margin-bottom: 24px;
+      }
+    }
+    & .fiveArticles__bigArticle {
+      height: 559px;
+      margin: 84px 0 121px 0;
+
+      & .mask3 {
+        -webkit-mask-image: url(../../../../public/images/cssMasks/mediumSize/2.png);
+        margin-bottom: 24px;
+      }
+      & .mask3__image {
+        height: 320px;
+      }
+      & .mask__image-stiker {
+        width: 120px;
+        height: 120px;
+      }
+      & .article__big-container {
+        width: auto;
+        align-items: baseline;
+      }
+      & .article__big-container-left-column {
+        width: 219px;
+        height: 144px;
+        margin: 0 24px 0 0;
+      }
+      & .article__title_moreSize {
+        @include tablet_H3;
+      }
+      & .article__subtitle_moreWidth {
+        width: auto;
+      }
+      & .article__big-container-right-column {
+        width: 461px;
+      }
+    }
+    & .mask__image-stiker {
+      width: 104px;
+      height: 104px;
+    }
+    & .mask__image-stiker_leftPos {
+      top: 8;
+      right: 8;
+      left: auto;
+    }
+    & .mask__image-stiker_rightPos {
+      top: 8;
+      right: 8;
+      left: auto;
+    }
+  }
 }
