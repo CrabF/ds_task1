@@ -1,11 +1,15 @@
 .article {
-  max-width: 1208px;
   margin: 80px auto 0;
+  width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   align-items: center;
+  justify-content: center;
   position: relative;
+
+  & .article__container {
+    margin-right: 40px;
+  }
 
   @media (min-width: 768px) and (max-width: 1279px) {
     &.article {
@@ -15,6 +19,7 @@
     }
     & .article__container {
       width: 704px;
+      margin-right: 0;
     }
     & .mask {
       -webkit-mask-image: url("../../../../public/images/cssMasks/mediumSize/6.png");

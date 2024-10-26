@@ -2,7 +2,7 @@
   position: relative;
   height: 1003px;
   margin-top: 155px;
-  width: 100vw;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -81,6 +81,23 @@
               & span:last-of-type {
                 width: 65px;
               }
+            }
+            & .webinars__back_pos1 {
+              top: 36px;
+              right: -50;
+              transform: scale(0.8);
+            }
+            & .webinars__back_pos2 {
+              top: 46px;
+              right: -85px;
+              transform: rotate(-166deg) scale(-1, 1) scale(1.6);
+            }
+            & .webinars__back_pos3 {
+              top: -181px;
+              right: 94px;
+              transform: scale(1) scale(-1, 1) rotate(79deg);
+              width: 440.65px;
+              height: 560.48px;
             }
           }
           & .webinars__card_coralColor {

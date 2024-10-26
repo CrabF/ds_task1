@@ -1,7 +1,7 @@
 .subscribe {
   position: relative;
   height: 906px;
-  width: 100vw;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -31,11 +31,9 @@
 
   @media (min-width: 768px) and (max-width: 1279px) {
     &.subscribe {
-      height: 800px;
-      align-items: baseline;
+      height: 806px;
       & .maskSubscribe {
         margin-top: 119px;
-        margin-left: 32px;
         border-radius: 32px;
         width: 704px;
         height: 498px;
@@ -52,16 +50,46 @@
         }
         & .subscribe__content {
           margin-left: 23px;
-          margin-top: -31px;
           width: 368px;
+          height: 418px;
           & h3 {
             @include tablet_H3;
             color: map-get($mainColors, white-dark);
           }
           & form {
             margin-top: 65px;
-            flex-direction: row;
+            flex-direction: column;
+            width: 368px;
+            & > div {
+              flex-direction: column;
+            }
+            & .subscribe__input-container {
+              margin-right: 0;
+              margin-bottom: 16px;
+              &.subscribe__input-container_view {
+                margin-bottom: 0;
+              }
+            }
+            & p {
+              @include text_13_R_SLS;
+            }
+            & label {
+              width: 40px;
+            }
           }
+        }
+      }
+      & .subscribe__success-form {
+        width: 280px;
+        height: 114px;
+        border-radius: 24px;
+        margin-top: 116px;
+        padding-right: 90px;
+        & .subscribe__success-form-stiker {
+          width: 104px;
+          height: 104px;
+          top: -36px;
+          right: -22px;
         }
       }
     }

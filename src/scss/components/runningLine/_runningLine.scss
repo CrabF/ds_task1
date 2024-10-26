@@ -8,6 +8,8 @@
   position: absolute;
   z-index: 1;
   margin: 0;
+  width: 120%;
+
   & * {
     display: flex;
     flex-direction: row;
@@ -51,12 +53,19 @@
     &.runningLine {
       height: 80px;
       transform: rotate(-3deg);
+      &.runningLine_subscribe {
+        transform: rotate(0deg);
+      }
     }
     &.runningLine_firstArticle {
-      top: 906;
+      top: 724;
+      width: 320%;
     }
     &.runningLine_webinars-bottom {
       transform: rotate(3deg);
+    }
+    &.runningLine_subscribe * {
+      @include runningLine_tablet_subscribeBot;
     }
   }
 }

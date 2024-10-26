@@ -1,7 +1,59 @@
 .footer {
-  width: 100vw;
+  width: 100%;
   background-color: map-get($mainColors, black-dark);
   height: 649px;
   display: flex;
   justify-content: center;
+
+  @media (min-width: 768px) and (max-width: 1279px) {
+    &.footer {
+      height: 808px;
+      & .footer__content {
+        width: 704px;
+        height: 672px;
+        margin: 64px auto 0;
+        & .footer__content-up {
+          position: relative;
+          flex-direction: column;
+          & span {
+            width: 285px;
+            & img:first-of-type {
+              width: 173px;
+              height: 64px;
+            }
+            & img:nth-of-type(2) {
+              width: 64px;
+              height: 64px;
+            }
+          }
+          & > div {
+            flex-direction: row;
+            width: 100%;
+            & > div {
+              width: 280px;
+              & button {
+                margin-top: 16px;
+              }
+            }
+          }
+          & ul {
+            width: 704px;
+            margin-top: 120px;
+          }
+        }
+        & .footer__content-down {
+          height: 124px;
+          & > div {
+            position: relative;
+            width: 704px;
+            & ul:nth-of-type(2) {
+              position: absolute;
+              top: -447;
+              left: 0;
+            }
+          }
+        }
+      }
+    }
+  }
 }

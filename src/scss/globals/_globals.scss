@@ -84,14 +84,18 @@ body {
   background-color: map-get($mainColors, white-dark);
   color: map-get($mainColors, black-dark);
   margin: 0;
-  width: 100vw;
   padding: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  overflow-x: hidden;
   position: relative;
+  overflow-x: hidden;
+
+  > main {
+    width: 100%;
+    overflow: hidden;
+  }
 }
 
 @mixin subtitleText {
@@ -233,6 +237,22 @@ body {
   font-family: "ArchivoBlack", sans-serif;
   font-size: 28px;
   line-height: 1.2;
+  font-weight: 400;
+  color: map-get($mainColors, white-dark);
+}
+
+@mixin text_13_R_SLS {
+  font-family: "Nunito", sans-serif;
+  font-size: 13px;
+  line-height: 1.4;
+  font-weight: 400;
+  color: map-get($mainColors, white-dark);
+}
+
+@mixin runningLine_tablet_subscribeBot {
+  font-family: "ArchivoBlack", sans-serif;
+  font-size: 44px;
+  line-height: 52.8px;
   font-weight: 400;
   color: map-get($mainColors, white-dark);
 }
