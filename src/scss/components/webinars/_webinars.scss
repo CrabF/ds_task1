@@ -130,4 +130,38 @@
       }
     }
   }
+
+  @media (min-width: 320px) and (max-width: 767px) {
+    margin: -29px auto 0;
+    height: auto;
+    position: relative;
+    &::before {
+      transform: rotate(-4deg);
+    }
+    & .webinars__content {
+      margin-top: 149px;
+      height: auto;
+      width: 304px;
+      & > span {
+        & h2 {
+          @include tablet_H2;
+          width: 100%;
+        }
+        & button {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+        }
+      }
+      & .webinars__cards {
+        margin-top: 41px;
+        flex-direction: column;
+
+        & .webinars__card {
+          height: auto;
+          width: 100%;
+        }
+      }
+    }
+  }
 }

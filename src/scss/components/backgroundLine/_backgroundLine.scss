@@ -15,15 +15,17 @@
       top: -57px;
       left: -108px;
     }
-    &.backgroundLine__tablet_pos1 {
-      display: block;
-    }
-    &.backgroundLine__tablet_pos2 {
-      display: block;
-    }
+    &.backgroundLine__tablet_pos1,
+    &.backgroundLine__tablet_pos2,
     &.backgroundLine__tablet_posWebinars {
       display: block;
     }
+    //   &.backgroundLine__tablet_pos2 {
+    //     display: block;
+    //   }
+    //   &.backgroundLine__tablet_posWebinars {
+    //     display: block;
+    //   }
   }
   @media (min-width: 768px) and (max-width: 840px) {
     &.backgroundLine__tablet_posWebinars {
@@ -68,6 +70,20 @@
   @media (min-width: 1254px) and (max-width: 1279px) {
     &.backgroundLine__tablet_posWebinars {
       -webkit-clip-path: polygon(0 37%, 100% 32%, 100% 88%, 0 124%);
+    }
+  }
+
+  @media (min-width: 320px) and (max-width: 767px) {
+    &.backgroundLine_pos1,
+    &.backgroundLine_pos2,
+    &.backgroundLine_posWebinars {
+      display: none;
+    }
+
+    &.backgroundLine__mobile_pos1,
+    &.backgroundLine__mobile_pos2,
+    &.backgroundLine__mobile_pos3 {
+      display: block;
     }
   }
 }

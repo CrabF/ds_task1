@@ -95,4 +95,54 @@
       margin: 0;
     }
   }
+
+  @media (min-width: 320px) and (max-width: 767px) {
+    &.article {
+      width: 304px;
+      margin-top: 24px;
+      flex-direction: column;
+
+      & .article__container {
+        margin-right: 0;
+      }
+
+      & .mask {
+        -webkit-mask-image: url("../../../../public/images/cssMasks/smallSize/1.png");
+      }
+      & .mask__image {
+        width: 304px;
+        height: 352px;
+      }
+      & .mask__image-stiker {
+        width: 104px;
+        height: 104px;
+        top: 8px;
+        right: 9px;
+      }
+      & .article__content {
+        width: 304px;
+
+        & .article__content-tags {
+          margin: 18px 0 16px 0;
+
+          & .article__content-list-tag:first-of-type {
+            margin-right: 16px;
+          }
+        }
+        & .article__title_moreSize {
+          @include tablet_H3;
+        }
+        & .article__subtitle_lessWidth {
+          width: 100%;
+        }
+        & .article__accent {
+          margin-top: 16px;
+        }
+        & .article__button {
+          margin-top: 56px;
+          width: 304px;
+        }
+      }
+    }
+  }
 }

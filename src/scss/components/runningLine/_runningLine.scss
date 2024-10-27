@@ -68,4 +68,20 @@
       @include runningLine_tablet_subscribeBot;
     }
   }
+
+  @media (min-width: 320px) and (max-width: 767px) {
+    & * {
+      @include tablet_H1;
+    }
+    &.runningLine {
+      height: 80px;
+    }
+    &.runningLine_firstArticle {
+      top: 925;
+      width: 320%;
+    }
+    &.runningLine_webinars-top {
+      transform: rotate(-4deg);
+    }
+  }
 }
