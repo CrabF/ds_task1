@@ -22,7 +22,7 @@
       margin-right: 0;
     }
     & .mask {
-      -webkit-mask-image: url("../../../../public/images/cssMasks/mediumSize/6.png");
+      -webkit-mask-image: url("../../public/images/cssMasks/mediumSize/6.png");
     }
     & .mask__image {
       width: 704px;
@@ -107,7 +107,8 @@
       }
 
       & .mask {
-        -webkit-mask-image: url("../../../../public/images/cssMasks/smallSize/1.png");
+        -webkit-mask-image: url("../../public/images/cssMasks/smallSize/avatar.png");
+
       }
       & .mask__image {
         width: 304px;

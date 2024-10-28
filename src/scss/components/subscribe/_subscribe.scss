@@ -38,10 +38,10 @@
         width: 704px;
         height: 498px;
         flex-direction: row;
-        -webkit-mask-image: url(../../../../public/images/cssMasks/mediumSize/7.png);
+        -webkit-mask-image: url(../../public/images/cssMasks/mediumSize/7.png);
         position: relative;
         & .maskSubscribe__img {
-          background-image: url(../../../../public/images/subscribe/subTablet.png);
+          background-image: url(../../public/images/subscribe/subTablet.png);
           width: 288px;
           height: 498px;
           position: absolute;
@@ -99,14 +99,14 @@
     &.subscribe {
       height: 1362px;
       & .maskSubscribe {
-        -webkit-mask-image: url(../../../../public/images/cssMasks/smallSize/subscribe.png);
+        -webkit-mask-image: url(../../public/images/cssMasks/smallSize/subscribe.png);
         width: 304px;
         height: 1101px;
         margin-top: 82px;
         flex-direction: column-reverse;
 
         & .maskSubscribe__img {
-          background-image: url(../../../../public/images/subscribe/subMobile.png);
+          background-image: url(../../public/images/subscribe/subMobile.png);
           width: 304px;
           height: 400px;
         }

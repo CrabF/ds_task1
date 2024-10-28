@@ -13,7 +13,7 @@
     & .fiveArticles__smallArticle {
       width: 340px;
       & .mask1 {
-        -webkit-mask-image: url(../../../../public/images/cssMasks/mediumSize/5.png);
+        -webkit-mask-image: url(../../public/images/cssMasks/mediumSize/5.png);
         margin-bottom: 24px;
       }
       & .mask1__image {
@@ -36,11 +36,11 @@
         margin-right: 26px;
       }
       & .mask2 {
-        -webkit-mask-image: url(../../../../public/images/cssMasks/mediumSize/1.png);
+        -webkit-mask-image: url(../../public/images/cssMasks/mediumSize/1.png);
         margin-bottom: 24px;
       }
       & .mask4 {
-        -webkit-mask-image: url(../../../../public/images/cssMasks/mediumSize/3.png);
+        -webkit-mask-image: url(../../public/images/cssMasks/mediumSize/3.png);
         margin-bottom: 24px;
       }
       & .mask__image-stiker_specSize {
@@ -51,7 +51,7 @@
         transform: rotate(16deg);
       }
       & .mask5 {
-        -webkit-mask-image: url(../../../../public/images/cssMasks/mediumSize/4.png);
+        -webkit-mask-image: url(../../public/images/cssMasks/mediumSize/4.png);
         margin-bottom: 24px;
       }
     }
@@ -60,7 +60,7 @@
       margin: 84px 0 121px 0;
 
       & .mask3 {
-        -webkit-mask-image: url(../../../../public/images/cssMasks/mediumSize/2.png);
+        -webkit-mask-image: url(../../public/images/cssMasks/mediumSize/2.png);
         margin-bottom: 24px;
       }
       & .mask3__image {
@@ -117,7 +117,7 @@
       & .article__container {
         & .mask1 {
           margin-bottom: 18px;
-          -webkit-mask-image: url(../../../../public/images/cssMasks/smallSize/2.png);
+          -webkit-mask-image: url(../../public/images/cssMasks/smallSize/2.png);
         }
         & .mask1__image {
           width: 304px;
@@ -132,7 +132,7 @@
           left: 7px;
         }
         & .mask2 {
-          -webkit-mask-image: url(../../../../public/images/cssMasks/smallSize/6.png);
+          -webkit-mask-image: url(../../public/images/cssMasks/smallSize/6.png);
           margin-bottom: 18px;
           & .mask1__image_spec {
             object-position: 77% 0%;
@@ -143,7 +143,7 @@
           right: 9px;
         }
         & .mask4 {
-          -webkit-mask-image: url(../../../../public/images/cssMasks/smallSize/5.png);
+          -webkit-mask-image: url(../../public/images/cssMasks/smallSize/5.png);
           margin-bottom: 18px;
         }
         & .mask__image-stiker_specSize {
@@ -155,7 +155,7 @@
           transform: rotate(14deg);
         }
         & .mask5 {
-          -webkit-mask-image: url(../../../../public/images/cssMasks/smallSize/4.png);
+          -webkit-mask-image: url(../../public/images/cssMasks/smallSize/4.png);
           margin-bottom: 18px;
 
           & .mask1__image {
@@ -186,7 +186,7 @@
       margin: 0 auto 142px auto;
       position: relative;
       & .mask3 {
-        -webkit-mask-image: url(../../../../public/images/cssMasks/smallSize/3.png);
+        -webkit-mask-image: url(../../public/images/cssMasks/smallSize/3.png);
         margin-bottom: 18px;
       }
       & .mask__image-stiker_rightPos {
