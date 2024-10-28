@@ -312,7 +312,7 @@ body > main {
     margin-right: 0;
   }
   .article.article .mask {
-    -webkit-mask-image: url("../../public/images/cssMasks/smallSize/avatar.png");
+    -webkit-mask-image: url("../../public/images/cssMasks/smallSize/1.png");
   }
   .article.article .mask__image {
     width: 304px;
