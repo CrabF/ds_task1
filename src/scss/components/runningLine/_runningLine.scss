@@ -75,6 +75,11 @@
     }
     &.runningLine {
       height: 80px;
+      &.runningLine_subscribe {
+        & * {
+          color: map-get($mainColors, white-dark);
+        }
+      }
     }
     &.runningLine_firstArticle {
       top: 925;
@@ -82,6 +87,10 @@
     }
     &.runningLine_webinars-top {
       transform: rotate(-4deg);
+    }
+    &.runningLine_webinars-bottom {
+      transform: rotate(4deg);
+      bottom: 2px;
     }
   }
 }

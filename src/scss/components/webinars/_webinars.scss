@@ -133,10 +133,14 @@
 
   @media (min-width: 320px) and (max-width: 767px) {
     margin: -29px auto 0;
-    height: auto;
+    height: 1670px;
     position: relative;
     &::before {
-      transform: rotate(-4deg);
+      transform: rotate(-4deg) translateX(-50px);
+      height: 1000px;
+    }
+    &::after {
+      height: 800px;
     }
     & .webinars__content {
       margin-top: 149px;
@@ -149,17 +153,82 @@
         }
         & button {
           position: absolute;
-          bottom: 0;
-          left: 0;
+          bottom: 173px;
+          left: 224px;
+          width: 304px;
         }
       }
       & .webinars__cards {
         margin-top: 41px;
         flex-direction: column;
+        gap: 16px;
 
         & .webinars__card {
-          height: auto;
+          height: 351px;
           width: 100%;
+
+          & article {
+            height: 100%;
+            width: 100%;
+
+            & header {
+              margin-top: 24px;
+              margin-left: 24px;
+              width: 256px;
+              & span {
+                width: 172px;
+                margin-top: 6px;
+                & * {
+                  width: 100%;
+                }
+              }
+              & h5 {
+                @include tablet_H5;
+              }
+            }
+
+            & main {
+              margin-left: 24px;
+              width: 256px;
+              margin-top: -3px;
+              & h4 {
+                @include tablet_H4;
+                color: map-get($mainColors, white-dark);
+              }
+            }
+            & footer {
+              width: 256px;
+              margin-left: 24px;
+              margin-bottom: 24px;
+            }
+          }
+        }
+        & .webinars__back_pos1 {
+          top: 20px;
+          right: -55px;
+          transform: scale(0.95);
+        }
+        & .webinars__back_pos2 {
+          top: 36px;
+          right: -80px;
+          transform: rotate(196deg) scale(-1, 1) scale(1.7);
+        }
+        & .webinars__card_coralColor {
+          height: 391px;
+          & article {
+            gap: 33px;
+          }
+        }
+        & .webinars__card_tangerineColor {
+          height: 370px;
+          & article {
+            gap: 33px;
+          }
+          & .webinars__back_pos3 {
+            top: 55px;
+            right: -53px;
+            transform: scale(1) rotate(174deg);
+          }
         }
       }
     }

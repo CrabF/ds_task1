@@ -94,4 +94,71 @@
       }
     }
   }
+
+  @media (min-width: 320px) and (max-width: 767px) {
+    &.subscribe {
+      height: 1362px;
+      & .maskSubscribe {
+        -webkit-mask-image: url(../../../../public/images/cssMasks/smallSize/subscribe.png);
+        width: 304px;
+        height: 1101px;
+        margin-top: 82px;
+        flex-direction: column-reverse;
+
+        & .maskSubscribe__img {
+          background-image: url(../../../../public/images/subscribe/subMobile.png);
+          width: 304px;
+          height: 400px;
+        }
+        & .subscribe__content {
+          margin-left: 0;
+          width: 256px;
+          height: auto;
+          & h3 {
+            @include tablet_H3;
+            color: map-get($mainColors, white-dark);
+            margin-top: 64px;
+          }
+          & form {
+            margin-top: 80px;
+            & > div {
+              flex-direction: column;
+              & * {
+                width: 256px;
+              }
+            }
+            & .subscribe__input-container {
+              margin: 0 0 8px 0;
+              width: 256px;
+            }
+            & > span {
+              width: 100%;
+              margin-top: 8px;
+              & label {
+                width: 24px;
+              }
+              & p {
+                width: 216px;
+                @include text_13_R_SLS;
+              }
+            }
+          }
+          & .subscribe__success-form {
+            width: 256px;
+            height: 114px;
+            border-radius: 24px;
+            margin-top: 80px;
+            padding-left: 17px;
+
+            & .subscribe__success-form-stiker {
+              width: 104px;
+              height: 104px;
+              top: -32px;
+              right: -16px;
+            }
+          }
+        }
+      }
+    }
+  }
 }

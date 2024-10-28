@@ -70,3 +70,35 @@ function validateEmail(val) {
     inputContainer.classList.add("subscribe__input-container_correct");
   }
 }
+
+//Dropdown для mobile версии
+
+const footerContent = document.querySelector(".footer__content-up");
+
+footerContent.addEventListener("click", (e) => {
+  const targetText = e.target.textContent;
+  if (
+    targetText.includes("CURSOS") ||
+    targetText.includes("WEBINARS") ||
+    targetText.includes("SOBRE") ||
+    targetText.includes("BLOG")
+  ) {
+    const parentLi = e.target.closest("li");
+    parentLi.classList.toggle("footer__content-up_animation");
+
+    let nextElem = e.target.nextElementSibling;
+    const computedStyle = getComputedStyle(nextElem);
+
+    if (computedStyle.display === "none") {
+      while (nextElem) {
+        nextElem.style.display = "flex";
+        nextElem = nextElem.nextElementSibling;
+      }
+    } else {
+      while (nextElem) {
+        nextElem.style.display = "none";
+        nextElem = nextElem.nextElementSibling;
+      }
+    }
+  }
+});

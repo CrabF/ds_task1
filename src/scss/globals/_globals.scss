@@ -233,6 +233,14 @@ body {
   color: map-get($mainColors, black-dark);
 }
 
+@mixin tablet_H5 {
+  font-family: "ArchivoBlack", sans-serif;
+  font-size: 22px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: map-get($mainColors, white-dark);
+}
+
 @mixin tablet_H2 {
   font-family: "ArchivoBlack", sans-serif;
   font-size: 28px;

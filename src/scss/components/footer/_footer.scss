@@ -56,4 +56,120 @@
       }
     }
   }
+
+  @media (min-width: 320px) and (max-width: 767px) {
+    &.footer {
+      height: 1134px;
+      & .footer__content {
+        width: 304px;
+        // height: auto;
+        // height: 1134px;
+        height: 804px;
+        margin-top: 32px;
+        position: relative;
+        justify-content: flex-start;
+        & .footer__content-up {
+          height: auto;
+          flex-wrap: wrap;
+          & > div {
+            & > div {
+              position: absolute;
+              bottom: -35px;
+              left: 0;
+
+              & * {
+                width: 304px;
+              }
+            }
+          }
+          & span {
+            width: 304px;
+            & img:first-of-type {
+              width: 172.7px;
+              height: 64px;
+            }
+            & img:nth-of-type(2) {
+              width: 64px;
+              height: 64px;
+            }
+          }
+          & ul {
+            width: 304px;
+            margin-top: 152px;
+            flex-direction: column;
+            & div {
+              width: 100%;
+            }
+            & li:first-of-type {
+              margin-bottom: 24px;
+              position: relative;
+              display: flex;
+              &::after {
+                content: "";
+                position: absolute;
+                right: 0;
+                top: 0;
+                background-image: url("../../../../public/images/footer/arrowDown.svg");
+                background-repeat: no-repeat;
+                width: 24px;
+                height: 29px;
+                transition: transform 0.3s ease;
+              }
+            }
+            & li {
+              margin-bottom: 16px;
+              transition: 0.3s ease-in-out;
+              display: none;
+            }
+            & li:last-of-type {
+              margin-bottom: 32px;
+            }
+          }
+        }
+        & .footer__content-down {
+          margin-top: 26px;
+          width: 216px;
+          height: 173px;
+          & > div {
+            & ul:nth-of-type(1) {
+              flex-direction: column;
+              & li:last-of-type {
+                margin-bottom: 0;
+              }
+              & li {
+                margin-bottom: 24px;
+              }
+            }
+            & ul:nth-of-type(2) {
+              position: absolute;
+              top: 100;
+              left: 0;
+              justify-content: space-between;
+              width: 304px;
+              & img {
+                width: 48px;
+                height: 48px;
+              }
+            }
+          }
+          & > ul {
+            margin-top: 393px;
+            flex-direction: column;
+            list-style-type: none;
+            width: 234px;
+            border-top: none;
+            align-items: flex-start;
+            & li {
+              margin: 0 0 16px 0;
+            }
+            & li:last-of-type {
+              margin: 0;
+            }
+          }
+        }
+      }
+    }
+  }
 }
+
+
