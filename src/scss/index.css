@@ -1394,7 +1394,7 @@ body > main {
   .webinars .webinars__content > span button {
     position: absolute;
     bottom: 173px;
-    left: 224px;
+    left: auto;
     width: 304px;
   }
   .webinars .webinars__content .webinars__cards {
