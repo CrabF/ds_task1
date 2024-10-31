@@ -1,0 +1,6 @@
+.subscribe__input-container_correct {
+  &::before {
+    display: block;
+    background-image: url("../../public/images/subscribe/correct.svg");
+  }
+}

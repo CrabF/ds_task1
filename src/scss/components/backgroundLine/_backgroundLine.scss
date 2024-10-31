@@ -1,0 +1,97 @@
+.backgroundLine {
+  display: block;
+  position: absolute;
+  z-index: -2;
+  width: 100%;
+  height: auto;
+
+  @media (min-width: 768px) and (max-width: 1279px) {
+    &.backgroundLine_pos1,
+    &.backgroundLine_pos2,
+    &.backgroundLine_posWebinars {
+      display: none;
+    }
+    &.backgroundLine_posSubscribe {
+      top: -57px;
+      left: -108px;
+    }
+    &.backgroundLine__tablet_pos1,
+    &.backgroundLine__tablet_pos2,
+    &.backgroundLine__tablet_posWebinars {
+      display: block;
+    }
+    //   &.backgroundLine__tablet_pos2 {
+    //     display: block;
+    //   }
+    //   &.backgroundLine__tablet_posWebinars {
+    //     display: block;
+    //   }
+  }
+  @media (min-width: 768px) and (max-width: 840px) {
+    &.backgroundLine__tablet_posWebinars {
+      -webkit-clip-path: none;
+    }
+  }
+  @media (min-width: 841px) and (max-width: 869px) {
+    &.backgroundLine__tablet_posWebinars {
+      -webkit-clip-path: polygon(0 4%, 100% 5%, 100% 88%, 0 124%);
+    }
+  }
+  @media (min-width: 869px) and (max-width: 911px) {
+    &.backgroundLine__tablet_posWebinars {
+      -webkit-clip-path: polygon(0 9%, 100% 8%, 100% 88%, 0 124%);
+    }
+  }
+  @media (min-width: 911px) and (max-width: 966px) {
+    &.backgroundLine__tablet_posWebinars {
+      -webkit-clip-path: polygon(0 15%, 100% 16%, 100% 88%, 0 124%);
+    }
+  }
+  @media (min-width: 966px) and (max-width: 1020px) {
+    &.backgroundLine__tablet_posWebinars {
+      -webkit-clip-path: polygon(0 19%, 100% 19%, 100% 88%, 0 124%);
+    }
+  }
+  @media (min-width: 1020px) and (max-width: 1093px) {
+    &.backgroundLine__tablet_posWebinars {
+      -webkit-clip-path: polygon(0 25%, 100% 21%, 100% 88%, 0 124%);
+    }
+  }
+  @media (min-width: 1093px) and (max-width: 1172px) {
+    &.backgroundLine__tablet_posWebinars {
+      -webkit-clip-path: polygon(0 30%, 100% 26%, 100% 88%, 0 124%);
+    }
+  }
+  @media (min-width: 1172px) and (max-width: 1254px) {
+    &.backgroundLine__tablet_posWebinars {
+      -webkit-clip-path: polygon(0 35%, 100% 31%, 100% 88%, 0 124%);
+    }
+  }
+  @media (min-width: 1254px) and (max-width: 1279px) {
+    &.backgroundLine__tablet_posWebinars {
+      -webkit-clip-path: polygon(0 37%, 100% 32%, 100% 88%, 0 124%);
+    }
+  }
+
+  @media (min-width: 320px) and (max-width: 767px) {
+    &.backgroundLine_pos1,
+    &.backgroundLine_pos2,
+    &.backgroundLine_posWebinars {
+      display: none;
+    }
+
+    &.backgroundLine__mobile_pos1,
+    &.backgroundLine__mobile_pos2,
+    &.backgroundLine__mobile_pos3 {
+      display: block;
+    }
+
+    &.backgroundLine_posSubscribe {
+      width: auto;
+      height: auto;
+      top: 2px;
+      left: -328px;
+      transform: rotate(205deg) scale(0.95);
+    }
+  }
+}

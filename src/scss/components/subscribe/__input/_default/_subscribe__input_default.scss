@@ -1,0 +1,25 @@
+.subscribe__input_default {
+  @include inputText;
+  color: map-get($mainColors, white-dark);
+  width: 280px;
+  height: 49px;
+  border-radius: 88px;
+  border: 1.5px solid map-get($mainColors, white-dark);
+  display: flex;
+  justify-content: center;
+  background-color: inherit;
+  padding: 0 24px;
+  margin-right: 16px;
+  outline: 0;
+  position: relative;
+
+  &::placeholder {
+    @include inputText;
+  }
+  &:disabled {
+    opacity: 60%;
+  }
+  &:focus {
+    border: 2px solid map-get($mainColors, black-dark);
+  }
+}

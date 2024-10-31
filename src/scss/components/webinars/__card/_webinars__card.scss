@@ -1,0 +1,67 @@
+.webinars__card {
+  width: 376px;
+  height: 432px;
+  border-radius: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  & article {
+    width: 312px;
+    height: 368px;
+    display: grid;
+    gap: 16px;
+    grid-template-rows: 93px auto 1fr;
+  }
+  & header {
+    p {
+      width: 228px;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+    display: flex;
+    flex-direction: row;
+  }
+  & * {
+    margin: 0;
+    padding: 0;
+  }
+  & p {
+    @include text_15_M_SLS;
+  }
+  & h5 {
+    @include webinarsCardName;
+    margin-bottom: 4px;
+  }
+  & h4 {
+    @include webinarsCardTitle;
+  }
+  & main {
+    display: flex;
+  }
+  & footer {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-self: flex-end;
+  }
+  & footer > span:first-child {
+    justify-content: flex-start;
+    margin-bottom: 12px;
+    p:first-child {
+      margin-right: 28px;
+    }
+  }
+  & .article__accent {
+    & img {
+      height: auto;
+      width: auto;
+    }
+    & span {
+      align-items: flex-start;
+    }
+  }
+}

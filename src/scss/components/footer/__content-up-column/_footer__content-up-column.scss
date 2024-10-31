@@ -1,0 +1,16 @@
+.footer__content-up-column {
+  width: 120px;
+  height: 100%;
+  &:nth-of-type(1) {
+    width: 120px;
+  }
+  &:nth-of-type(2) {
+    width: 113px;
+  }
+  &:nth-of-type(3) {
+    width: 152px;
+  }
+  &:nth-of-type(4) {
+    width: 120px;
+  }
+}

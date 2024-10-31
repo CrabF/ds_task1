@@ -1,0 +1,12 @@
+.fiveArticles__smallArticle {
+  width: 584px;
+  display: flex;
+  flex-direction: column;
+  transition: transform 2s linear;
+  &:hover {
+    .mask__image-stiker_animation {
+      transition: transform 2s linear;
+      transform: rotate(360deg);
+    }
+  }
+}

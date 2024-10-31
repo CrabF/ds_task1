@@ -1,0 +1,9 @@
+.subscribe__span-error {
+  display: none;
+  width: 280px;
+  height: 36px;
+  margin-top: 8px;
+  @include text_13_M_SLS;
+  color: map-get($mainColors, white-dark);
+  text-align: center;
+}

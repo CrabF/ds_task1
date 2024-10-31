@@ -1,0 +1,15 @@
+.subscribe__input-container {
+  position: relative;
+  width: 280px;
+  margin-right: 16px;
+  &::before {
+    content: "";
+    background-image: url("../../public/images/subscribe/error.svg");
+    position: absolute;
+    top: 9;
+    right: 18;
+    width: 29px;
+    height: 29px;
+    display: none;
+  }
+}

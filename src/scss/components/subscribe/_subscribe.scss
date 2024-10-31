@@ -1,0 +1,164 @@
+.subscribe {
+  position: relative;
+  height: 906px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &::before {
+    content: "";
+    background-color: map-get($mainColors, gray5);
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+  }
+  &::after {
+    content: "";
+    background-color: map-get($mainColors, gray5);
+    position: absolute;
+    z-index: -3;
+    top: -300;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 500;
+  }
+
+  @media (min-width: 768px) and (max-width: 1279px) {
+    &.subscribe {
+      height: 806px;
+      & .maskSubscribe {
+        margin-top: 119px;
+        border-radius: 32px;
+        width: 704px;
+        height: 498px;
+        flex-direction: row;
+        -webkit-mask-image: url(../../public/images/cssMasks/mediumSize/7.png);
+        position: relative;
+        & .maskSubscribe__img {
+          background-image: url(../../public/images/subscribe/subTablet.png);
+          width: 288px;
+          height: 498px;
+          position: absolute;
+          right: 0;
+          top: 0;
+        }
+        & .subscribe__content {
+          margin-left: 23px;
+          width: 368px;
+          height: 418px;
+          & h3 {
+            @include tablet_H3;
+            color: map-get($mainColors, white-dark);
+          }
+          & form {
+            margin-top: 65px;
+            flex-direction: column;
+            width: 368px;
+            & > div {
+              flex-direction: column;
+            }
+            & .subscribe__input-container {
+              margin-right: 0;
+              margin-bottom: 16px;
+              &.subscribe__input-container_view {
+                margin-bottom: 0;
+              }
+            }
+            & p {
+              @include text_13_R_SLS;
+            }
+            & label {
+              width: 40px;
+            }
+          }
+        }
+      }
+      & .subscribe__success-form {
+        width: 280px;
+        height: 114px;
+        border-radius: 24px;
+        margin-top: 116px;
+        padding-right: 90px;
+        & .subscribe__success-form-stiker {
+          width: 104px;
+          height: 104px;
+          top: -36px;
+          right: -22px;
+        }
+      }
+    }
+  }
+
+  @media (min-width: 320px) and (max-width: 767px) {
+    &.subscribe {
+      height: 1362px;
+      & .maskSubscribe {
+        -webkit-mask-image: url(../../public/images/cssMasks/smallSize/subscribe.png);
+        width: 304px;
+        height: 1101px;
+        margin-top: 82px;
+        flex-direction: column-reverse;
+
+        & .maskSubscribe__img {
+          background-image: url(../../public/images/subscribe/subMobile.png);
+          width: 304px;
+          height: 400px;
+        }
+        & .subscribe__content {
+          margin-left: 0;
+          width: 256px;
+          height: auto;
+          & h3 {
+            @include tablet_H3;
+            color: map-get($mainColors, white-dark);
+            margin-top: 64px;
+          }
+          & form {
+            margin-top: 80px;
+            & > div {
+              flex-direction: column;
+              & * {
+                width: 256px;
+              }
+            }
+            & .subscribe__input-container {
+              margin: 0 0 8px 0;
+              width: 256px;
+            }
+            & > span {
+              width: 100%;
+              margin-top: 8px;
+              & label {
+                width: 24px;
+              }
+              & p {
+                width: 216px;
+                @include text_13_R_SLS;
+              }
+            }
+          }
+          & .subscribe__success-form {
+            width: 256px;
+            height: 114px;
+            border-radius: 24px;
+            margin-top: 80px;
+            padding-left: 17px;
+
+            & .subscribe__success-form-stiker {
+              width: 104px;
+              height: 104px;
+              top: -32px;
+              right: -16px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

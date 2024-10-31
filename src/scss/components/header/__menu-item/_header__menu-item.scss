@@ -1,0 +1,32 @@
+.header__menu-item {
+  height: 37px;
+  border: 1.2px map-get($mainColors, gray15) solid;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 18px;
+  margin-right: 10px;
+  cursor: pointer;
+  &:last-of-type {
+    margin-right: 0;
+  }
+  &#Diseño:hover {
+    background-color: map-get($tagColors, pink-light);
+  }
+  &#Programación:hover {
+    background-color: map-get($tagColors, sky);
+  }
+  &#Gaming:hover {
+    background-color: map-get($tagColors, grass);
+  }
+  &#Marketing:hover {
+    background-color: map-get($tagColors, tangerine);
+  }
+  &#Software:hover {
+    background-color: map-get($tagColors, turquoise-light);
+  }
+  &#Carrera:hover {
+    background-color: map-get($tagColors, mint-light);
+  }
+}

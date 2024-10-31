@@ -1,0 +1,7 @@
+.article__content-list-tag_turquoise {
+  color: map-get($textColors, turquoise-dark);
+  &:first-of-type {
+    color: map-get($mainColors, black-dark);
+    background-color: map-get($tagColors, turquoise-light);
+  }
+}

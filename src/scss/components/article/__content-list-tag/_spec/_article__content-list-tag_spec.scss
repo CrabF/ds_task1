@@ -1,0 +1,7 @@
+.article__content-list-tag_spec {
+  margin-right: 10px;
+  color: map-get($textColors, pink-dark);
+  &:last-of-type {
+    margin: 0;
+  }
+}

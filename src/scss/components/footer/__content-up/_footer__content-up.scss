@@ -1,0 +1,102 @@
+.footer__content-up {
+  height: 268px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  & > div {
+    width: 352px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    & div {
+      & button {
+        width: 280px;
+        height: 49px;
+        margin-top: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 40px;
+        background-color: map-get($textColors, violet-dark);
+        border: none;
+        cursor: pointer;
+        outline: 0;
+        @include buttonText;
+
+        &:hover {
+          background-color: map-get($textColors, pink-dark);
+        }
+        &:disabled {
+          opacity: 60%;
+        }
+        &:active {
+          background-color: map-get($textColors, pink-dark);
+        }
+        &:focus {
+          border: 2px solid map-get($mainColors, white-dark);
+        }
+      }
+
+      & input[type="email"] {
+        @include inputText;
+        color: map-get($mainColors, white-dark);
+        width: 280px;
+        height: 49px;
+        border-radius: 88px;
+        border: 1.5px solid map-get($mainColors, white-dark);
+        display: flex;
+        justify-content: center;
+        background-color: inherit;
+        padding: 0 24px;
+        margin-right: 16px;
+        outline: 0;
+
+        &::placeholder {
+          @include inputText;
+        }
+        &:disabled {
+          opacity: 60%;
+        }
+        &:focus {
+          border: 2px solid map-get($mainColors, white-dark);
+        }
+      }
+    }
+  }
+  & ul {
+    width: 688px;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+
+    & li {
+      @include text_15_M_SLS;
+      color: map-get($mainColors, white-dark);
+      margin-bottom: 10px;
+    }
+    & li:first-of-type {
+      @include buttonText;
+      color: map-get($mainColors, gray70);
+      margin-bottom: 32px;
+    }
+    & li:last-of-type {
+      margin: 0;
+    }
+  }
+  & span {
+    display: flex;
+    justify-content: space-between;
+    & img:first-of-type {
+      display: block;
+      width: 224px;
+      height: 82px;
+    }
+    & img:nth-of-type(2) {
+      display: block;
+      width: 80px;
+      height: 80px;
+    }
+  }
+}

@@ -1,0 +1,8 @@
+.article__container {
+  position: relative;
+  & * {
+    display: block;
+    margin: 0;
+    padding: 0;
+  }
+}

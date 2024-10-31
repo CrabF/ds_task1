@@ -1,0 +1,266 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+// Переменные main цветов
+$black: rgba(27, 31, 33, 1);
+$gray80: rgba(67, 67, 67, 1);
+$gray70: rgba(117, 119, 120, 1);
+$gray35: rgba(174, 174, 174, 1);
+$gray20: rgba(217, 217, 216, 1);
+$gray15: rgba(232, 232, 232, 1);
+$gray5: rgba(242, 242, 242, 1);
+$gray5tr20: rgba(242, 242, 242, 0.2);
+$white: rgba(252, 250, 249, 1);
+$white90: rgba(252, 250, 249, 0.9);
+$pale: rgba(255, 255, 254, 1);
+
+// Переменные tag цветов
+$pink: rgba(236, 149, 177, 1);
+$sky: rgba(164, 204, 254, 1);
+$violet: rgba(208, 176, 250, 1);
+$grass: rgba(190, 219, 57, 1);
+$turquoise: rgba(172, 214, 222, 1);
+$tangerine: rgba(255, 173, 32, 1);
+$coral: rgba(254, 137, 104, 1);
+$mint: rgba(174, 223, 214, 1);
+$marine: rgba(144, 238, 203, 1);
+
+//Переменные text цветов
+$pink-dark: rgba(218, 51, 105, 1);
+$sky-dark: rgba(95, 165, 253, 1);
+$violet-dark: rgba(152, 83, 244, 1);
+$grass-dark: rgba(148, 172, 35, 1);
+$turquoise-dark: rgba(87, 172, 188, 1);
+$tangerine-dark: rgba(239, 151, 0, 1);
+$coral-dark: rgba(254, 109, 68, 1);
+$mint-dark: rgba(87, 188, 170, 1);
+$marine-dark: rgba(34, 201, 139, 1);
+
+//Main цвета
+$mainColors: (
+  black-dark: $black,
+  gray80: $gray80,
+  gray70: $gray70,
+  gray35: $gray35,
+  gray20: $gray20,
+  gray15: $gray15,
+  gray5: $gray5,
+  gray5tr20: $gray5tr20,
+  white-dark: $white,
+  white90: $white90,
+  pale: $pale,
+);
+
+//Tag цвета
+$tagColors: (
+  pink-light: $pink,
+  sky: $sky,
+  violet: $violet,
+  grass: $grass,
+  turquoise-light: $turquoise,
+  tangerine: $tangerine,
+  coral: $coral,
+  mint-light: $mint,
+  marine: $marine,
+);
+
+//Text цвета
+$textColors: (
+  pink-dark: $pink-dark,
+  sky-dark: $sky-dark,
+  violet-dark: $violet-dark,
+  grass-dark: $grass-dark,
+  turquoise-dark: $turquoise-dark,
+  tangerine-dark: $tangerine-dark,
+  coral-dark: $coral-dark,
+  mint-dark: $mint-dark,
+  marine-dark: $marine-dark,
+);
+
+body {
+  background-color: map-get($mainColors, white-dark);
+  color: map-get($mainColors, black-dark);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow-x: hidden;
+
+  > main {
+    width: 100%;
+    overflow: hidden;
+  }
+}
+
+@mixin subtitleText {
+  font-family: "Nunito", sans-serif;
+  font-size: 18px;
+  line-height: 28.8px;
+  font-weight: 400;
+  color: map-get($mainColors, gray70);
+}
+
+@mixin accentText {
+  font-family: "Nunito", sans-serif;
+  font-size: 15px;
+  line-height: 1.4;
+  font-weight: 400;
+  color: map-get($mainColors, gray35);
+}
+
+@mixin runningLineText {
+  font-family: "ArchivoBlack", sans-serif;
+  font-size: 58px;
+  line-height: 1.2;
+  font-weight: 400;
+}
+
+@mixin webinarsTitle {
+  font-family: "ArchivoBlack", sans-serif;
+  font-size: 46px;
+  line-height: 55.2px;
+  font-weight: 400;
+  color: map-get($mainColors, white-dark);
+}
+
+@mixin webinarsCardName {
+  font-family: "ArchivoBlack", sans-serif;
+  font-size: 26px;
+  line-height: 31.2px;
+  font-weight: 400;
+  color: map-get($mainColors, white-dark);
+}
+
+@mixin webinarsCardTitle {
+  font-family: "ArchivoBlack", sans-serif;
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 400;
+  color: map-get($mainColors, white-dark);
+}
+
+@mixin text_15_M_SLS {
+  font-family: "Nunito", sans-serif;
+  font-size: 15px;
+  line-height: 1.4;
+  font-weight: 500;
+  color: map-get($mainColors, white-dark);
+}
+
+@mixin subscribeTitle {
+  font-family: "ArchivoBlack", sans-serif;
+  font-size: 36px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: map-get($mainColors, white-dark);
+}
+
+@mixin subscribeSubTitle {
+  font-family: "Nunito", sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+  font-weight: 400;
+  color: map-get($mainColors, white-dark);
+}
+
+@mixin subscribeAdditionalText {
+  font-family: "Nunito", sans-serif;
+  font-size: 15px;
+  line-height: 1.4;
+  font-weight: 400;
+  color: map-get($mainColors, white-dark);
+}
+
+@mixin inputText {
+  font-family: "Nunito", sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+  font-weight: 500;
+  color: map-get($mainColors, gray15);
+}
+
+@mixin buttonText {
+  font-family: "Nunito", sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+  font-weight: 700;
+  color: map-get($mainColors, white-dark);
+}
+
+@mixin footerAdditionalText {
+  font-family: "Nunito", sans-serif;
+  font-size: 13px;
+  line-height: 1.6;
+  font-weight: 500;
+  color: map-get($mainColors, gray35);
+}
+
+@mixin text_13_M_SLS {
+  font-family: "Nunito", sans-serif;
+  font-size: 13px;
+  line-height: 1.4;
+  font-weight: 500;
+  color: map-get($mainColors, gray35);
+}
+
+@mixin tablet_H3 {
+  font-family: "ArchivoBlack", sans-serif;
+  font-size: 26px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: map-get($mainColors, black-dark);
+}
+
+@mixin tablet_H1 {
+  font-family: "ArchivoBlack", sans-serif;
+  font-size: 30px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: map-get($mainColors, black-dark);
+}
+
+@mixin tablet_H4 {
+  font-family: "ArchivoBlack", sans-serif;
+  font-size: 24px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: map-get($mainColors, black-dark);
+}
+
+@mixin tablet_H5 {
+  font-family: "ArchivoBlack", sans-serif;
+  font-size: 22px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: map-get($mainColors, white-dark);
+}
+
+@mixin tablet_H2 {
+  font-family: "ArchivoBlack", sans-serif;
+  font-size: 28px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: map-get($mainColors, white-dark);
+}
+
+@mixin text_13_R_SLS {
+  font-family: "Nunito", sans-serif;
+  font-size: 13px;
+  line-height: 1.4;
+  font-weight: 400;
+  color: map-get($mainColors, white-dark);
+}
+
+@mixin runningLine_tablet_subscribeBot {
+  font-family: "ArchivoBlack", sans-serif;
+  font-size: 44px;
+  line-height: 52.8px;
+  font-weight: 400;
+  color: map-get($mainColors, white-dark);
+}

@@ -1,0 +1,1036 @@
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/scss/index.css" />
+    <title>First task</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__content">
+        <svg
+          class="header__logo"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g clip-path="url(#a)" fill="rgba(27, 31, 33, 1)">
+            <path
+              d="M1.407.475 2.852 1.68v5.424h7.81l1.062 1.338-1.065 1.272H2.852V14.9l-1.445 1.203L0 14.899V1.68L1.407.475zm4.224 13.67h5.955l.997 1.268-1.062 1.342H5.63l-.962-1.238.962-1.373zM5.838.164h5.68l1.061 1.338-1.062 1.272h-5.61L4.772 1.541 5.838.165zM37.49 2.741l1.272 1.372L37.49 5.49H18.259L17.02 4.113l1.238-1.372h19.23zm-21.5 5.703 1.2-1.03 1.203 1.03v1.514c0 2.541.686 4.635 3.745 4.635h.617c2.748 0 4.259-1.855 4.259-4.742V8.41l1.169-1.031 1.203.996v1.58c0 2.576.755 4.5 3.71 4.5h.514c2.887 0 3.4-2.2 3.435-4.604V8.306l1.169-.962 1.234.997v1.545c-.034 3.33-.927 7.145-5.734 7.145H33.2c-2.852 0-4.397-1.273-5.014-2.852-.72 1.614-2.645 3.024-5.255 3.024h-.62c-4.945 0-6.283-2.986-6.318-7.18V8.445h-.003zm9.824 24.862-.686-1.855 1.786-.514 6.286 2.849v-5.873l1.272-1.065 1.304 1.065v7.11l2.334 1.066.652 1.717-1.82.652-11.128-5.152zM37.01 20.77l1.718.79-.549 1.75-15.458 7.18-1.855-.72.755-1.787 15.39-7.213zm-22.303 9.79 1.51 1.237c-.138 4.362-3.882 6.662-8.31 6.662h-.448c-2.2 0-4.773-.824-6.421-2.403l.172-1.752 1.614-.207c1.204 1.031 2.886 1.752 4.466 1.752h.482c2.99 0 5.29-1.235 5.531-4.155l1.404-1.135zm-1.41-2.853c-.138-3.024-2.404-4.224-5.531-4.224h-.483c-1.855 0-3.262.721-4.466 1.752l-1.614-.207-.172-1.752c1.648-1.613 3.948-2.369 6.355-2.369h.48c4.465 0 8.21 2.27 8.344 6.697l-1.51 1.203-1.403-1.1zM53.805 4.993h-3.51c.079.683.555 1.186 1.255 1.186.424 0 .82-.169 1.048-.514l1.117.031c-.396.88-1.217 1.345-2.165 1.345-1.325 0-2.304-.99-2.304-2.351 0-1.366.959-2.345 2.276-2.345 1.197 0 2.283.8 2.283 2.641v.007zm-3.51-.72h2.403a1.16 1.16 0 0 0-1.166-1.07c-.665 0-1.12.435-1.238 1.07zM57.236 3.669a1.807 1.807 0 0 0-1.166-.483c-.386 0-.583.207-.583.414 0 .248.11.365.414.476l.773.265c.83.286 1.176.742 1.176 1.297 0 .714-.545 1.403-1.663 1.403-.73 0-1.455-.296-1.879-.703l.583-.762c.338.334.859.583 1.276.583.396 0 .652-.17.652-.435 0-.286-.138-.403-.635-.572l-.741-.259c-.624-.217-.97-.683-.97-1.234 0-.652.563-1.314 1.632-1.314.524 0 1.227.207 1.69.641l-.56.683zM60.843 6.18c.513 0 .91-.249 1.138-.652l.851.434c-.355.663-1.138 1.08-1.986 1.08-1.324 0-2.362-.98-2.362-2.345 0-1.376 1.038-2.355 2.362-2.355.852 0 1.631.414 1.986 1.08l-.851.434c-.228-.407-.625-.652-1.138-.652-.81 0-1.366.641-1.366 1.493 0 .852.555 1.483 1.366 1.483zM63.64 5.3V2.462h.989v2.71c0 .704.465 1.018 1.048 1.018s1.048-.318 1.048-1.018v-2.71h.98V5.3c0 .938-.742 1.741-2.028 1.741S63.64 6.238 63.64 5.3zM73.143 4.993h-3.51c.079.683.555 1.186 1.255 1.186.424 0 .82-.169 1.048-.514l1.117.031c-.397.88-1.217 1.345-2.165 1.345-1.325 0-2.304-.99-2.304-2.351 0-1.366.959-2.345 2.276-2.345 1.197 0 2.283.8 2.283 2.641v.007zm-3.51-.72h2.403a1.16 1.16 0 0 0-1.166-1.07c-.665 0-1.12.435-1.238 1.07zM75.04 6.92h-.98V0h.98v6.92zM78.846 3.924c0-.476-.355-.72-.93-.72-.484 0-.921.206-1.256.475l-.465-.73c.375-.328 1.006-.604 1.79-.604 1.175 0 1.847.651 1.847 1.603v2.976h-.99v-.465c-.258.413-.81.582-1.275.582-1.017 0-1.61-.582-1.61-1.403 0-.87.613-1.366 1.61-1.366h.959c.227 0 .317-.1.317-.276v-.072h.003zm0 1.366v-.387c-.09.07-.248.1-.476.1h-.593c-.524 0-.79.228-.79.604 0 .345.26.662.79.662.555 0 1.07-.286 1.07-.98zM50.522 17.373h-.98v-6.92h.98v3.123c.238-.444.859-.783 1.514-.783 1.296 0 2.234.98 2.234 2.345 0 1.366-.958 2.352-2.255 2.352-.641 0-1.245-.317-1.493-.762v.645zm-.031-2.235c0 .852.562 1.504 1.383 1.504.81 0 1.383-.652 1.383-1.504 0-.851-.573-1.493-1.383-1.493-.82 0-1.383.645-1.383 1.493zM57.76 13.783h-.514c-.634 0-1.048.365-1.048 1.376v2.213h-.98v-4.458h.96v.713c.168-.493.613-.79 1.234-.79a2 2 0 0 1 .345.032v.914h.003zM59.757 17.372h-.99v-3.648h-.673v-.81h1.663v4.458zM59.2 10.61a.698.698 0 1 1 0 1.396.689.689 0 0 1-.693-.692c0-.386.307-.704.693-.704zM62.257 11.114v1.8h1.048v.81h-1.048v2.5c0 .308.227.366.455.366.344 0 .603-.041.603-.041v.82s-.486.049-.852.049c-.534 0-1.196-.11-1.196-.98v-2.713h-.731v-.81h.73v-1.8h.99zM66.746 14.38c0-.476-.355-.721-.93-.721-.487 0-.922.207-1.256.476l-.466-.731c.376-.328 1.007-.604 1.79-.604 1.176 0 1.848.652 1.848 1.604v2.976h-.99v-.466c-.258.414-.81.583-1.275.583-1.017 0-1.61-.583-1.61-1.404 0-.868.613-1.365 1.61-1.365h.959c.227 0 .317-.1.317-.276v-.072h.003zm0 1.362v-.386c-.09.069-.248.1-.476.1h-.593c-.524 0-.79.227-.79.603 0 .345.26.662.79.662.555 0 1.07-.286 1.07-.98zm-1.138-5.29h1.228l-.852 1.673h-.948l.572-1.673zM69.891 13.173c0 .127 0 .207-.01.296.376-.434.89-.672 1.455-.672 1.048 0 1.662.652 1.662 1.672v2.907h-.99v-2.769c0-.634-.386-.93-.88-.93-.423 0-.84.216-1.216.65v3.046h-.98v-4.459h.959v.259zM75.377 17.372h-.99v-3.648h-.672v-.81h1.662v4.458zm-.555-6.762a.698.698 0 1 1 0 1.396.689.689 0 0 1-.693-.692.7.7 0 0 1 .693-.704zM78.68 16.63c.514 0 .911-.247 1.139-.65l.851.434c-.355.662-1.138 1.079-1.986 1.079-1.324 0-2.362-.98-2.362-2.345 0-1.376 1.038-2.355 2.362-2.355.852 0 1.631.414 1.986 1.08l-.851.434c-.228-.407-.625-.652-1.138-.652-.81 0-1.366.641-1.366 1.493 0 .852.552 1.483 1.366 1.483zM84.077 14.38c0-.477-.355-.722-.93-.722-.484 0-.922.207-1.256.476l-.466-.73c.376-.328 1.007-.604 1.79-.604 1.176 0 1.848.651 1.848 1.603v2.976h-.99v-.465c-.258.413-.81.582-1.275.582-1.017 0-1.61-.582-1.61-1.403 0-.87.613-1.366 1.61-1.366h.959c.227 0 .317-.1.317-.276v-.072h.003zm0 1.361v-.386c-.09.069-.248.1-.476.1h-.593c-.524 0-.79.228-.79.603 0 .345.26.663.79.663.555 0 1.07-.287 1.07-.98zM91.829 16.72c-.238.445-.841.773-1.493.773-1.297 0-2.245-.99-2.245-2.352 0-1.365.931-2.345 2.224-2.345.662 0 1.276.338 1.524.783-.01-.307-.01-.672-.01-1.017v-2.107h.99v6.92h-.99v-.654zM89.1 15.139c0 .852.562 1.503 1.383 1.503.81 0 1.383-.651 1.383-1.503 0-.852-.573-1.493-1.383-1.493-.82 0-1.383.645-1.383 1.493zM98.326 15.445h-3.51c.078.683.554 1.186 1.254 1.186.424 0 .821-.169 1.049-.513l1.117.03c-.397.88-1.217 1.345-2.166 1.345-1.324 0-2.303-.99-2.303-2.351 0-1.366.959-2.345 2.276-2.345 1.196 0 2.282.8 2.282 2.641v.007zm-3.51-.72h2.403a1.16 1.16 0 0 0-1.166-1.07c-.665 0-1.12.435-1.238 1.07zM52.074 24.831c0-.476-.355-.72-.931-.72-.486 0-.921.206-1.255.475l-.466-.73c.376-.328 1.007-.604 1.79-.604 1.175 0 1.848.652 1.848 1.603v2.976h-.99v-.465c-.258.413-.81.582-1.276.582-1.017 0-1.61-.582-1.61-1.403 0-.869.614-1.366 1.61-1.366h.959c.228 0 .317-.1.317-.275v-.073h.004zm0 1.362v-.386c-.09.07-.248.1-.476.1h-.593c-.524 0-.79.228-.79.604 0 .344.259.662.79.662.555 0 1.069-.287 1.069-.98zM56.798 24.238h-.514c-.634 0-1.048.366-1.048 1.376v2.214h-.98v-4.462h.96v.714c.168-.493.613-.79 1.234-.79.11 0 .227.01.344.031v.917h.004zM58.867 21.566v1.8h1.048v.81h-1.048v2.5c0 .307.227.366.455.366.345 0 .603-.042.603-.042v.821s-.486.048-.851.048c-.535 0-1.197-.11-1.197-.979v-2.717h-.73v-.81h.73v-1.8h.99v.003zM65.084 25.896h-3.51c.08.683.555 1.186 1.255 1.186.424 0 .82-.168 1.048-.513l1.117.03c-.396.88-1.217 1.346-2.165 1.346-1.324 0-2.303-.99-2.303-2.352 0-1.366.958-2.345 2.275-2.345 1.197 0 2.283.8 2.283 2.641v.007zm-3.51-.72h2.403a1.16 1.16 0 0 0-1.165-1.07c-.662 0-1.117.439-1.238 1.07zM68.515 24.572a1.808 1.808 0 0 0-1.165-.483c-.387 0-.583.207-.583.414 0 .248.11.366.414.476l.772.266c.831.286 1.176.741 1.176 1.296 0 .714-.545 1.404-1.662 1.404-.731 0-1.455-.297-1.88-.704l.583-.762c.338.335.859.583 1.276.583.397 0 .652-.17.652-.435 0-.286-.138-.403-.635-.572l-.74-.259c-.625-.217-.97-.682-.97-1.234 0-.652.562-1.314 1.631-1.314.524 0 1.228.207 1.69.641l-.559.683zM73.853 27.083c.514 0 .91-.248 1.138-.652l.852.435c-.356.662-1.138 1.08-1.987 1.08-1.324 0-2.362-.98-2.362-2.346 0-1.376 1.038-2.355 2.362-2.355.852 0 1.632.414 1.987 1.08l-.852.434c-.228-.407-.624-.652-1.138-.652-.81 0-1.365.642-1.365 1.493.003.852.555 1.483 1.365 1.483zM79.263 24.238h-.513c-.635 0-1.049.366-1.049 1.376v2.214h-.979v-4.462h.959v.714c.169-.493.614-.79 1.234-.79.11 0 .228.01.345.031v.917h.003zM84.236 25.896h-3.51c.079.683.555 1.186 1.255 1.186.424 0 .82-.168 1.048-.513l1.117.03c-.396.88-1.217 1.346-2.165 1.346-1.324 0-2.304-.99-2.304-2.352 0-1.366.959-2.345 2.276-2.345 1.197 0 2.283.8 2.283 2.641v.007zm-3.51-.72h2.403a1.16 1.16 0 0 0-1.166-1.07c-.665 0-1.117.439-1.237 1.07zM87.656 24.831c0-.476-.355-.72-.93-.72-.483 0-.921.206-1.256.475l-.465-.73c.376-.328 1.007-.604 1.79-.604 1.175 0 1.848.652 1.848 1.603v2.976h-.99v-.465c-.259.413-.81.582-1.276.582-1.017 0-1.61-.582-1.61-1.403 0-.869.614-1.366 1.61-1.366h.959c.227 0 .317-.1.317-.275v-.073h.003zm0 1.362v-.386c-.09.07-.248.1-.475.1h-.593c-.525 0-.79.228-.79.604 0 .344.258.662.79.662.555 0 1.069-.287 1.069-.98zM91.098 21.566v1.8h1.048v.81h-1.048v2.5c0 .307.227.366.455.366.345 0 .603-.042.603-.042v.821s-.486.048-.851.048c-.535 0-1.197-.11-1.197-.979v-2.717h-.73v-.81h.73v-1.8h.99v.003zM94.243 27.828h-.99v-3.652h-.672v-.81h1.662v4.462zm-.555-6.765c.386 0 .703.317.703.703a.698.698 0 0 1-.704.693.689.689 0 0 1-.693-.693c0-.386.307-.703.694-.703zM97.277 26.886l1.197-3.52h1.048l-1.641 4.458h-1.245l-1.583-4.459h1.097l1.127 3.52zM102.725 24.831c0-.476-.355-.72-.931-.72-.486 0-.92.206-1.255.475l-.465-.73c.376-.328 1.007-.604 1.789-.604 1.176 0 1.849.652 1.849 1.603v2.976h-.99v-.465c-.259.413-.81.582-1.276.582-1.017 0-1.61-.582-1.61-1.403 0-.869.614-1.366 1.61-1.366h.959c.227 0 .317-.1.317-.275v-.073h.003zm0 1.362v-.386c-.089.07-.248.1-.475.1h-.593c-.525 0-.79.228-.79.604 0 .344.258.662.79.662.555 0 1.068-.287 1.068-.98zM107.45 24.572a1.808 1.808 0 0 0-1.166-.483c-.386 0-.583.207-.583.414 0 .248.111.366.414.476l.773.266c.831.286 1.175.741 1.175 1.296 0 .714-.544 1.404-1.662 1.404-.731 0-1.455-.297-1.879-.704l.583-.762c.338.335.858.583 1.276.583.396 0 .651-.17.651-.435 0-.286-.138-.403-.634-.572l-.741-.259c-.625-.217-.969-.682-.969-1.234 0-.652.562-1.314 1.631-1.314.524 0 1.227.207 1.689.641l-.558.683zM50.888 38.279h-.197l-1.593-4.459h1.107l1.117 3.51 1.166-3.51h1.058l-1.89 5.183c-.237.642-.613 1-1.403 1h-.693v-.81h.545c.355 0 .524-.117.652-.504l.13-.41zM57.47 32.021v1.8h1.049v.81H57.47v2.5c0 .307.228.366.456.366.344 0 .603-.041.603-.041v.82s-.486.048-.852.048c-.534 0-1.196-.11-1.196-.979v-2.717h-.731v-.81h.73v-1.8h.99v.003zM63.691 36.349h-3.51c.079.682.555 1.186 1.255 1.186.424 0 .82-.17 1.048-.514l1.117.03c-.396.88-1.217 1.346-2.165 1.346-1.324 0-2.304-.99-2.304-2.352 0-1.366.959-2.345 2.276-2.345 1.197 0 2.283.8 2.283 2.642v.007zm-3.51-.721h2.403a1.16 1.16 0 0 0-1.165-1.07c-.666 0-1.121.439-1.238 1.07zM66.636 37.538c.514 0 .91-.248 1.138-.652l.852.435c-.356.662-1.138 1.08-1.987 1.08-1.324 0-2.362-.98-2.362-2.346 0-1.376 1.038-2.355 2.362-2.355.852 0 1.631.414 1.987 1.08l-.852.434c-.228-.407-.624-.652-1.138-.652-.81 0-1.366.642-1.366 1.493.004.849.556 1.483 1.366 1.483zM70.463 34.076c0 .128 0 .207-.01.297.376-.435.89-.673 1.455-.673 1.049 0 1.662.652 1.662 1.673v2.907h-.99v-2.77c0-.634-.385-.93-.879-.93-.424 0-.841.217-1.217.651v3.045h-.98v-4.459h.96v.26zM76.832 33.7c1.314 0 2.383.98 2.383 2.345 0 1.365-1.07 2.352-2.383 2.352-1.314 0-2.372-.99-2.372-2.352-.004-1.366 1.055-2.345 2.372-2.345zm0 .859c-.81 0-1.376.634-1.376 1.483 0 .851.562 1.493 1.376 1.493.81 0 1.376-.642 1.376-1.493-.003-.849-.566-1.483-1.376-1.483zM81.16 38.28h-.98v-6.925h.98v6.925zM84.505 33.7c1.314 0 2.383.98 2.383 2.345 0 1.365-1.07 2.352-2.383 2.352-1.314 0-2.373-.99-2.373-2.352-.003-1.366 1.056-2.345 2.373-2.345zm0 .859c-.81 0-1.376.634-1.376 1.483 0 .851.562 1.493 1.376 1.493.81 0 1.376-.642 1.376-1.493-.004-.849-.566-1.483-1.376-1.483zM92.246 33.817v4.814c0 .693-.345 1.365-1.403 1.365h-1.87v-.81h1.721c.266 0 .563-.069.563-.476v-1.096c-.238.434-.842.762-1.494.762-1.286 0-2.234-.97-2.234-2.335 0-1.376.931-2.345 2.224-2.345.652 0 1.266.338 1.514.783 0-.1-.01-.207-.01-.345v-.317h.99zm-2.334 3.72c.82 0 1.382-.64 1.382-1.492 0-.863-.562-1.504-1.382-1.504-.81 0-1.376.642-1.376 1.504 0 .848.565 1.493 1.376 1.493zM94.677 38.28h-.98V34.63h-.682v-.81h1.662v4.459zm-.89-6.925h1.228l-.852 1.673h-.948l.572-1.672zM98.453 35.282c0-.475-.355-.72-.931-.72-.486 0-.92.207-1.255.476l-.466-.731c.376-.328 1.007-.604 1.79-.604 1.176 0 1.848.652 1.848 1.604v2.975h-.99v-.465c-.258.414-.81.583-1.275.583-1.018 0-1.61-.583-1.61-1.404 0-.869.613-1.365 1.61-1.365h.958c.228 0 .318-.1.318-.276v-.073h.003zm0 1.366v-.386c-.09.069-.248.1-.476.1h-.593c-.524 0-.79.227-.79.603 0 .345.26.662.79.662.555-.003 1.07-.29 1.07-.979z"
+            />
+          </g>
+          <defs>
+            <clipPath id="a">
+              <path fill="#fff" d="M0 0h108.076v40H0z" />
+            </clipPath>
+          </defs>
+        </svg>
+        <menu class="header__menu">
+          <li id="Diseño" class="header__menu-item">Diseño</li>
+          <li id="Programación" class="header__menu-item">
+            Programación & Data
+          </li>
+          <li id="Gaming" class="header__menu-item">Gaming</li>
+          <li id="Marketing" class="header__menu-item">Marketing</li>
+          <li id="Software" class="header__menu-item">Software</li>
+          <li id="Carrera" class="header__menu-item">Carrera</li>
+        </menu>
+        <nav class="header__menu-rigth">
+          <img
+            class="header__menu-search"
+            src="./public/images/loupeIcon.svg"
+            alt="loupe"
+          />
+          <a class="header__menu-link"
+            >EBAC<img
+              class="header__menu-image"
+              src="./public/images/arrowIcon.svg"
+              alt="arrow"
+            />
+          </a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="article">
+        <div class="article__container">
+          <figure class="mask">
+            <img
+              class="mask__image"
+              src="./public/images/article/girlLaptop.png"
+              alt="girl with laptop"
+            />
+          </figure>
+          <img
+            class="mask__image-stiker"
+            src="./public/images/stiker.png"
+            alt="stiker"
+          />
+        </div>
+        <article class="article__content">
+          <header class="article__content-tags">
+            <ul class="article__content-list">
+              <li
+                class="article__content-list-tag article__content-list-tag_grass"
+              >
+                Gaming
+              </li>
+              <li
+                class="article__content-list-tag article__content-list-tag_grass"
+              >
+                Artículo
+              </li>
+              <li
+                class="article__content-list-tag article__content-list-tag_grass"
+              >
+                Niños
+              </li>
+              <li
+                class="article__content-list-tag article__content-list-tag_grass"
+              >
+                Proyecto
+              </li>
+            </ul>
+          </header>
+          <main>
+            <h3 class="article__title article__title_moreSize">
+              El Artista Técnico, cuando la programación y el diseño de juegos
+              se juntan
+            </h3>
+            <p class="article__subtitle article__subtitle_lessWidth">
+              ¡Es posible unir la pasión por los dos universos! ¿Habías
+              escuchado este término antes? Si no te suena de nada, no te
+              sientas mal, el concepto es nuevo. ¡Nosotros te lo explicamos!
+            </p>
+          </main>
+          <footer>
+            <span class="article__accent">
+              <span>
+                <img src="./public/images/calendarIcon.svg" alt="calendar" />
+                <p>2 de junio de 2022</p></span
+              >
+              <span>
+                <img src="./public/images/timerIcon.svg" alt="timer" />
+                <p>10 min</p></span
+              >
+            </span>
+            <button class="article__button">Leer el artículo</button>
+          </footer>
+        </article>
+        <div class="runningLine runningLine_firstArticle">
+          <div>
+            <span>
+              <img src="./public/images/star.svg" alt="star" />
+              <p>Artículos populares</p>
+            </span>
+            <span>
+              <img src="./public/images/star.svg" alt="star" />
+              <p>Artículos populares</p>
+            </span>
+          </div>
+          <div>
+            <span>
+              <img src="./public/images/star.svg" alt="star" />
+              <p>Artículos populares</p>
+            </span>
+            <span>
+              <img src="./public/images/star.svg" alt="star" />
+              <p>Artículos populares</p>
+            </span>
+          </div>
+          <div>
+            <span>
+              <img src="./public/images/star.svg" alt="star" />
+              <p>Artículos populares</p>
+            </span>
+            <span>
+              <img src="./public/images/star.svg" alt="star" />
+              <p>Artículos populares</p>
+            </span>
+          </div>
+          <div>
+            <span>
+              <img src="./public/images/star.svg" alt="star" />
+              <p>Artículos populares</p>
+            </span>
+            <span>
+              <img src="./public/images/star.svg" alt="star" />
+              <p>Artículos populares</p>
+            </span>
+          </div>
+          <div>
+            <span>
+              <img src="./public/images/star.svg" alt="star" />
+              <p>Artículos populares</p>
+            </span>
+            <span>
+              <img src="./public/images/star.svg" alt="star" />
+              <p>Artículos populares</p>
+            </span>
+          </div>
+          <div>
+            <span>
+              <img src="./public/images/star.svg" alt="star" />
+              <p>Artículos populares</p>
+            </span>
+            <span>
+              <img src="./public/images/star.svg" alt="star" />
+              <p>Artículos populares</p>
+            </span>
+          </div>
+        </div>
+      </section>
+      <section class="fiveArticles">
+        <article class="fiveArticles__smallArticle">
+          <div class="article__container">
+            <figure class="mask1">
+              <img
+                class="mask1__image"
+                src="./public/images/fiveArticles/girlSelfie.png"
+                alt="girl selfie"
+              />
+            </figure>
+            <img
+              class="mask__image-stiker mask__image-stiker_leftPos"
+              src="./public/images/fashionStiker.svg"
+              alt="stiker"
+            />
+          </div>
+          <figcaption>
+            <header class="article__content-tags">
+              <ul class="article__content-list">
+                <li
+                  class="article__content-list-tag article__content-list-tag_marine"
+                >
+                  Fashion
+                </li>
+                <li
+                  class="article__content-list-tag article__content-list-tag_marine"
+                >
+                  Artículo
+                </li>
+                <li
+                  class="article__content-list-tag article__content-list-tag_marine"
+                >
+                  Niños
+                </li>
+                <li
+                  class="article__content-list-tag article__content-list-tag_marine"
+                >
+                  Proyecto
+                </li>
+              </ul>
+            </header>
+            <main>
+              <h3 class="article__title article__title_lessSize">
+                ¿Cómo hacer el cambio de carrera a Diseño de Productos
+                Digitales?
+              </h3>
+              <p class="article__subtitle article__subtitle_lessWidth">
+                ¿Quieres saber qué se estudia para ser paisajista y formar parte
+                de uno de los gremios que están en auge a nivel laboral? Sigue
+                leyendo.
+              </p>
+            </main>
+            <footer>
+              <span class="article__accent">
+                <span>
+                  <img src="./public/images/calendarIcon.svg" alt="calendar" />
+                  <p>2 de junio de 2022</p></span
+                >
+                <span>
+                  <img src="./public/images/timerIcon.svg" alt="timer" />
+                  <p>10 min</p></span
+                >
+              </span>
+            </footer>
+          </figcaption>
+        </article>
+
+        <article class="fiveArticles__smallArticle">
+          <div class="article__container">
+            <figure class="mask2">
+              <img
+                class="mask1__image mask1__image_spec"
+                src="./public/images/fiveArticles/camera.png"
+                alt="camera"
+              />
+            </figure>
+            <img
+              class="mask__image-stiker mask__image-stiker_rightPos mask__image-stiker_animation"
+              src="./public/images/disenoSticker.svg"
+              alt="stiker"
+            />
+          </div>
+          <figcaption>
+            <header class="article__content-tags">
+              <ul class="article__content-list">
+                <li
+                  class="article__content-list-tag article__content-list-tag_pink"
+                >
+                  Diseño
+                </li>
+                <li
+                  class="article__content-list-tag article__content-list-tag_pink"
+                >
+                  Artículo
+                </li>
+                <li
+                  class="article__content-list-tag article__content-list-tag_pink"
+                >
+                  Niños
+                </li>
+                <li
+                  class="article__content-list-tag article__content-list-tag_pink"
+                >
+                  Proyecto
+                </li>
+              </ul>
+            </header>
+            <main>
+              <h3 class="article__title article__title_lessSize">
+                ¿Qué hace un paisajista y cuánto gana?
+              </h3>
+              <p class="article__subtitle article__subtitle_lessWidth">
+                ¿Quieres saber qué se estudia para ser paisajista y formar parte
+                de uno de los gremios que están en auge a nivel laboral? Sigue
+                leyendo.
+              </p>
+            </main>
+            <footer>
+              <span class="article__accent">
+                <span>
+                  <img src="./public/images/calendarIcon.svg" alt="calendar" />
+                  <p>2 de junio de 2022</p></span
+                >
+                <span>
+                  <img src="./public/images/timerIcon.svg" alt="timer" />
+                  <p>10 min</p></span
+                >
+              </span>
+            </footer>
+          </figcaption>
+        </article>
+
+        <article class="fiveArticles__bigArticle">
+          <div class="article__container">
+            <figure class="mask3">
+              <img
+                class="mask3__image"
+                src="./public/images/fiveArticles/checkToDo.png"
+                alt="check Todo"
+              />
+            </figure>
+            <img
+              class="mask__image-stiker mask__image-stiker_rightPos"
+              src="./public/images/disenoSticker.svg"
+              alt="stiker"
+            />
+          </div>
+          <figcaption>
+            <div class="article__big-container">
+              <div class="article__big-container-left-column">
+                <div class="article__content-tags-column">
+                  <ul class="article__content-list">
+                    <li
+                      class="article__content-list-tag article__content-list-tag_pink"
+                    >
+                      Diseño
+                    </li>
+                  </ul>
+                  <ul class="article__content-list article__content-list_spec">
+                    <li class="article__content-list-tag_spec">Artículo</li>
+                    <li class="article__content-list-tag_spec">Niños</li>
+                    <li class="article__content-list-tag_spec">Proyecto</li>
+                  </ul>
+                </div>
+                <div class="article__timeAndDate">
+                  <span class="article__accent_spec">
+                    <span>
+                      <p>2 de junio de 2022</p>
+                      <img
+                        src="./public/images/calendarIcon.svg"
+                        alt="calendar"
+                    /></span>
+                    <span>
+                      <p>10 min</p>
+                      <img src="./public/images/timerIcon.svg" alt="timer"
+                    /></span>
+                  </span>
+                </div>
+              </div>
+              <div class="article__big-container-right-column">
+                <h3 class="article__title article__title_moreSize">
+                  Todo lo que querías saber sobre Diseño UX / UI
+                </h3>
+                <p class="article__subtitle article__subtitle_moreWidth">
+                  Aunque los conceptos de experiencia de usuario y desarrollo de
+                  interfaces han estado presentes durante décadas en numerosas
+                  industrias, muchas personas aún tienen dudas sobre lo que
+                  realmente hace un profesional en este campo.
+                </p>
+              </div>
+            </div>
+          </figcaption>
+        </article>
+        <article class="fiveArticles__smallArticle">
+          <div class="article__container">
+            <figure class="mask4">
+              <img
+                class="mask1__image"
+                src="./public/images/fiveArticles/boyWithLaptop.png"
+                alt="boyWithLaptop"
+              />
+            </figure>
+            <img
+              class="mask__image-stiker mask__image-stiker_leftPos mask__image-stiker_specSize"
+              src="./public/images/marketingSticker.svg"
+              alt="stiker"
+            />
+          </div>
+          <figcaption>
+            <header class="article__content-tags">
+              <ul class="article__content-list">
+                <li
+                  class="article__content-list-tag article__content-list-tag_tangerine"
+                >
+                  Marketing
+                </li>
+                <li
+                  class="article__content-list-tag article__content-list-tag_tangerine"
+                >
+                  Artículo
+                </li>
+                <li
+                  class="article__content-list-tag article__content-list-tag_tangerine"
+                >
+                  Niños
+                </li>
+                <li
+                  class="article__content-list-tag article__content-list-tag_tangerine"
+                >
+                  Proyecto
+                </li>
+              </ul>
+            </header>
+            <main>
+              <h3 class="article__title article__title_lessSize">
+                Por qué algunas marcas fallan en el rebranding
+              </h3>
+              <p class="article__subtitle article__subtitle_lessWidth">
+                As falhas de grandes marcas como Gap e Coca Cola explicadas.
+              </p>
+            </main>
+            <footer>
+              <span class="article__accent">
+                <span>
+                  <img src="./public/images/calendarIcon.svg" alt="calendar" />
+                  <p>2 de junio de 2022</p></span
+                >
+                <span>
+                  <img src="./public/images/timerIcon.svg" alt="timer" />
+                  <p>10 min</p></span
+                >
+              </span>
+            </footer>
+          </figcaption>
+        </article>
+
+        <article class="fiveArticles__smallArticle">
+          <div class="article__container">
+            <figure class="mask5">
+              <img
+                class="mask1__image"
+                src="./public/images/fiveArticles/hardwork.png"
+                alt="hardwork"
+              />
+            </figure>
+            <img
+              class="mask__image-stiker mask__image-stiker_rightPos"
+              src="./public/images/softwareSticker.svg"
+              alt="stiker"
+            />
+          </div>
+          <figcaption>
+            <header class="article__content-tags">
+              <ul class="article__content-list">
+                <li
+                  class="article__content-list-tag article__content-list-tag_turquoise"
+                >
+                  Software
+                </li>
+                <li
+                  class="article__content-list-tag article__content-list-tag_turquoise"
+                >
+                  Artículo
+                </li>
+                <li
+                  class="article__content-list-tag article__content-list-tag_turquoise"
+                >
+                  Niños
+                </li>
+                <li
+                  class="article__content-list-tag article__content-list-tag_turquoise"
+                >
+                  Proyecto
+                </li>
+              </ul>
+            </header>
+            <main>
+              <h3 class="article__title article__title_lessSize">
+                ¿Qué es AutoCAD y para qué sirve?
+              </h3>
+              <p class="article__subtitle article__subtitle_lessWidth">
+                Unity te ofrece un gran abanico de posibilidades para
+                desarrollar tu juego, darlo a conocer en todo el mundo,
+                monetizar y triunfar por todo lo alto.
+              </p>
+            </main>
+            <footer>
+              <span class="article__accent">
+                <span>
+                  <img src="./public/images/calendarIcon.svg" alt="calendar" />
+                  <p>2 de junio de 2022</p></span
+                >
+                <span>
+                  <img src="./public/images/timerIcon.svg" alt="timer" />
+                  <p>10 min</p></span
+                >
+              </span>
+            </footer>
+          </figcaption>
+        </article>
+      </section>
+      <section class="webinars">
+        <div class="webinars__content">
+          <span>
+            <h2>Webinars gratuitos</h2>
+            <button>Todos os webinars</button>
+          </span>
+          <ul class="webinars__cards">
+            <li class="webinars__card webinars__card_turquoiseColor">
+              <article>
+                <header>
+                  <figure class="maskAvatars">
+                    <img
+                      src="./public/images/webinars/avatar1.svg"
+                      alt="avatar"
+                    />
+                  </figure>
+                  <span>
+                    <h5>Julia Alvarez</h5>
+                    <p>Programador, consultor</p>
+                  </span>
+                </header>
+                <main>
+                  <h4>
+                    Cómo iniciar el calendario de publicaciones de tu marca
+                  </h4>
+                </main>
+                <footer>
+                  <span>
+                    <p>Próximamente</p>
+                    <p>Webinar</p>
+                  </span>
+                  <span class="article__accent">
+                    <span>
+                      <img
+                        src="./public/images/calendarIconWhite.svg"
+                        alt="calendar"
+                      />
+                      <p>31 de maio, 01 e 02 de junho de 2022</p></span
+                    >
+                    <span>
+                      <img
+                        src="./public/images/timerIconWhite2.svg"
+                        alt="timer"
+                      />
+                      <p>19:00</p></span
+                    >
+                  </span>
+                </footer>
+              </article>
+              <img
+                class="webinars__back webinars__back_pos1"
+                src="./public/images/webinars/miniLine1.svg"
+                alt="backgroundLine"
+              />
+            </li>
+            <li class="webinars__card webinars__card_coralColor">
+              <article>
+                <header>
+                  <figure class="maskAvatars">
+                    <img
+                      src="./public/images/webinars/avatar2.png"
+                      alt="avatar"
+                    />
+                  </figure>
+                  <span>
+                    <h5>Diego Xochihuila</h5>
+                    <p>Diseñadora, editora</p>
+                  </span>
+                </header>
+                <main>
+                  <h4>
+                    Cloud Computing: Qué es y cuáles son sus ventajas en la
+                    industria
+                  </h4>
+                </main>
+                <footer>
+                  <span>
+                    <p>Próximamente</p>
+                    <p>Workshop</p>
+                  </span>
+                  <span class="article__accent">
+                    <span>
+                      <img
+                        src="./public/images/calendarIconWhite.svg"
+                        alt="calendar"
+                      />
+                      <p>
+                        30 e 31 de maio e 01, 02 e 03 de junho de 2022
+                      </p></span
+                    >
+                    <span>
+                      <img
+                        src="./public/images/timerIconWhite2.svg"
+                        alt="timer"
+                      />
+                      <p>19:00</p></span
+                    >
+                  </span>
+                </footer>
+              </article>
+              <img
+                class="webinars__back webinars__back_pos2"
+                src="./public/images/webinars/miniLine21.svg"
+                alt="backgroundLine"
+              />
+            </li>
+            <li class="webinars__card webinars__card_tangerineColor">
+              <article>
+                <header>
+                  <figure class="maskAvatars maskAvatars_specSize">
+                    <img
+                      src="./public/images/webinars/avatar3.png"
+                      alt="avatar"
+                    />
+                  </figure>
+                  <span>
+                    <h5>Consuela Zacatelco</h5>
+                    <p>Empresario graduado de la Universidad de Harvard</p>
+                  </span>
+                </header>
+                <main>
+                  <h4>Ilustración Digital: 3 diferentes estilos de diseño</h4>
+                </main>
+                <footer>
+                  <span>
+                    <p>Próximamente</p>
+                    <p>Demonstração</p>
+                  </span>
+                  <span class="article__accent article__accent_webinars">
+                    <span>
+                      <img
+                        src="./public/images/calendarIconWhite.svg"
+                        alt="calendar"
+                      />
+                      <p>01 e 02 de junho de 2022</p></span
+                    >
+                    <span>
+                      <img
+                        src="./public/images/timerIconWhite2.svg"
+                        alt="timer"
+                      />
+                      <p>19:00</p></span
+                    >
+                  </span>
+                </footer>
+              </article>
+              <img
+                class="webinars__back webinars__back_pos3"
+                src="./public/images/webinars/miniLine3.svg"
+                alt="backgroundLine"
+              />
+            </li>
+          </ul>
+        </div>
+
+        <div class="runningLine runningLine_webinars-top">
+          <div>
+            <span>
+              <img src="./public/images/star.svg" alt="star" />
+              <p>Webinars</p>
+            </span>
+            <span>
+              <img src="./public/images/star.svg" alt="star" />
+              <p>Webinars</p>
+            </span>
+          </div>
+          <div>
+            <span>
+              <img src="./public/images/star.svg" alt="star" />
+              <p>Webinars</p>
+            </span>
+            <span>
+              <img src="./public/images/star.svg" alt="star" />
+              <p>Webinars</p>
+            </span>
+          </div>
+          <div>
+            <span>
+              <img src="./public/images/star.svg" alt="star" />
+              <p>Webinars</p>
+            </span>
+            <span>
+              <img src="./public/images/star.svg" alt="star" />
+              <p>Webinars</p>
+            </span>
+          </div>
+          <div>
+            <span>
+              <img src="./public/images/star.svg" alt="star" />
+              <p>Webinars</p>
+            </span>
+            <span>
+              <img src="./public/images/star.svg" alt="star" />
+              <p>Webinars</p>
+            </span>
+          </div>
+          <div>
+            <span>
+              <img src="./public/images/star.svg" alt="star" />
+              <p>Webinars</p>
+            </span>
+            <span>
+              <img src="./public/images/star.svg" alt="star" />
+              <p>Webinars</p>
+            </span>
+          </div>
+          <div>
+            <span>
+              <img src="./public/images/star.svg" alt="star" />
+              <p>Webinars</p>
+            </span>
+            <span>
+              <img src="./public/images/star.svg" alt="star" />
+              <p>Webinars</p>
+            </span>
+          </div>
+          <div>
+            <span>
+              <img src="./public/images/star.svg" alt="star" />
+              <p>Webinars</p>
+            </span>
+            <span>
+              <img src="./public/images/star.svg" alt="star" />
+              <p>Webinars</p>
+            </span>
+          </div>
+        </div>
+        <div class="runningLine runningLine_webinars-bottom">
+          <div>
+            <span>
+              <img src="./public/images/star.svg" alt="star" />
+              <p>Suscribiete</p>
+            </span>
+            <span>
+              <img src="./public/images/star.svg" alt="star" />
+              <p>Suscribiete</p>
+            </span>
+          </div>
+          <div>
+            <span>
+              <img src="./public/images/star.svg" alt="star" />
+              <p>Suscribiete</p>
+            </span>
+            <span>
+              <img src="./public/images/star.svg" alt="star" />
+              <p>Suscribiete</p>
+            </span>
+          </div>
+          <div>
+            <span>
+              <img src="./public/images/star.svg" alt="star" />
+              <p>Suscribiete</p>
+            </span>
+            <span>
+              <img src="./public/images/star.svg" alt="star" />
+              <p>Suscribiete</p>
+            </span>
+          </div>
+          <div>
+            <span>
+              <img src="./public/images/star.svg" alt="star" />
+              <p>Suscribiete</p>
+            </span>
+            <span>
+              <img src="./public/images/star.svg" alt="star" />
+              <p>Suscribiete</p>
+            </span>
+          </div>
+          <div>
+            <span>
+              <img src="./public/images/star.svg" alt="star" />
+              <p>Suscribiete</p>
+            </span>
+            <span>
+              <img src="./public/images/star.svg" alt="star" />
+              <p>Suscribiete</p>
+            </span>
+          </div>
+          <div>
+            <span>
+              <img src="./public/images/star.svg" alt="star" />
+              <p>Suscribiete</p>
+            </span>
+            <span>
+              <img src="./public/images/star.svg" alt="star" />
+              <p>Suscribiete</p>
+            </span>
+          </div>
+        </div>
+      </section>
+      <section class="subscribe">
+        <figure class="maskSubscribe">
+          <div class="maskSubscribe__img"></div>
+          <figcaption class="subscribe__content">
+            <h3>Suscríbete a nuestra newsletter para no perderte nada nuevo</h3>
+            <p>
+              Tendencia en el mercado laboral: conozca esta profesión que
+              transforma la experiencia del Usuario a través de elementos
+              textuales.
+            </p>
+            <form novalidate>
+              <div>
+                <div class="subscribe__input-container">
+                  <input
+                    class="subscribe__input_default"
+                    placeholder="Su correo electrónico"
+                    type="email"
+                  />
+                  <span class="subscribe__span-error"
+                    >Formato de email inválido, verifique a ortografia</span
+                  >
+                </div>
+                <button>Enviar</button>
+              </div>
+              <span>
+                <input type="checkbox" id="checkbox1" />
+                <label for="checkbox1"></label>
+                <p>
+                  Confirmo que he leído, acepto y entiendo los
+                  <u>términos y condiciones</u>, así como el
+                  <u>aviso de privacidad</u>
+                </p>
+              </span>
+            </form>
+            <div class="subscribe__success-form">
+              Fantástico! Espera La primera carta
+              <img
+                class="subscribe__success-form-stiker"
+                src="./public/images/subscribe/success.svg"
+                alt="success"
+              />
+            </div>
+            <img
+              class="backgroundLine backgroundLine_posSubscribe"
+              src="./public/images/subscribe/lineBackground.svg"
+              alt="line background"
+            />
+          </figcaption>
+        </figure>
+        <div class="runningLine runningLine_subscribe">
+          <div>
+            <span>
+              <img src="./public/images/subscribe/whiteStar.svg" alt="star" />
+              <p>Descuento para cursos 20%</p>
+            </span>
+            <span>
+              <img src="./public/images/subscribe/whiteStar.svg" alt="star" />
+              <p>Descuento para cursos 20%</p>
+            </span>
+          </div>
+          <div>
+            <span>
+              <img src="./public/images/subscribe/whiteStar.svg" alt="star" />
+              <p>Descuento para cursos 20%</p>
+            </span>
+            <span>
+              <img src="./public/images/subscribe/whiteStar.svg" alt="star" />
+              <p>Descuento para cursos 20%</p>
+            </span>
+          </div>
+          <div>
+            <span>
+              <img src="./public/images/subscribe/whiteStar.svg" alt="star" />
+              <p>Descuento para cursos 20%</p>
+            </span>
+            <span>
+              <img src="./public/images/subscribe/whiteStar.svg" alt="star" />
+              <p>Descuento para cursos 20%</p>
+            </span>
+          </div>
+          <div>
+            <span>
+              <img src="./public/images/subscribe/whiteStar.svg" alt="star" />
+              <p>Descuento para cursos 20%</p>
+            </span>
+            <span>
+              <img src="./public/images/subscribe/whiteStar.svg" alt="star" />
+              <p>Descuento para cursos 20%</p>
+            </span>
+          </div>
+          <div>
+            <span>
+              <img src="./public/images/subscribe/whiteStar.svg" alt="star" />
+              <p>Descuento para cursos 20%</p>
+            </span>
+            <span>
+              <img src="./public/images/subscribe/whiteStar.svg" alt="star" />
+              <p>Descuento para cursos 20%</p>
+            </span>
+          </div>
+          <div>
+            <span>
+              <img src="./public/images/subscribe/whiteStar.svg" alt="star" />
+              <p>Descuento para cursos 20%</p>
+            </span>
+            <span>
+              <img src="./public/images/subscribe/whiteStar.svg" alt="star" />
+              <p>Descuento para cursos 20%</p>
+            </span>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <section class="footer__content">
+        <div class="footer__content-up">
+          <div>
+            <span>
+              <img src="./public/images/footer/logo.svg" alt="logo" />
+              <img src="./public/images/footer/img.png" alt="award" />
+            </span>
+            <div>
+              <input placeholder="Su correo electrónico" type="email" />
+              <button>Suscribirse al boletín</button>
+            </div>
+          </div>
+          <ul>
+            <div class="footer__content-up-column">
+              <li>CURSOS</li>
+              <li>Diseño</li>
+              <li>Programación & Data</li>
+              <li>Gaming</li>
+              <li>Marketing</li>
+              <li>Software</li>
+            </div>
+            <div class="footer__content-up-column">
+              <li>WEBINARS</li>
+              <li>Próximamente</li>
+              <li>Anteriores</li>
+            </div>
+            <div class="footer__content-up-column">
+              <li>SOBRE</li>
+              <li>Sobre nostros</li>
+              <li>Centro de carreras</li>
+              <li>Vacantes</li>
+            </div>
+            <div class="footer__content-up-column">
+              <li>BLOG</li>
+              <li>Diseño</li>
+              <li>Programación & Data</li>
+              <li>Gaming</li>
+              <li>Marketing</li>
+              <li>Software</li>
+            </div>
+          </ul>
+        </div>
+        <div class="footer__content-down">
+          <div>
+            <ul>
+              <li>
+                <p>WhatsApp</p>
+                <p>+52 55 9225-2629</p>
+              </li>
+              <li>
+                <p>Telefone</p>
+                <p>+52 55 9225-2629</p>
+              </li>
+              <li>
+                <p>email</p>
+                <p>Ebac.mx@gmail.com</p>
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <img src="./public/images/footer/inst.svg" alt="instagram" />
+              </li>
+              <li>
+                <img src="./public/images/footer/facebook.svg" alt="facebook" />
+              </li>
+              <li>
+                <img src="./public/images/footer/youtube.svg" alt="youtube" />
+              </li>
+              <li>
+                <img src="./public/images/footer/linkedIn.svg" alt="linkedIn" />
+              </li>
+            </ul>
+          </div>
+          <ul>
+            <li>AVISO DE PRIVACIDAD ALUMNOS</li>
+            <li>AVISO DE PRIVACIDAD PROFESORES</li>
+            <li>TÉRMINOS Y CONDICIONES</li>
+          </ul>
+        </div>
+      </section>
+    </footer>
+
+    <img
+      class="backgroundLine backgroundLine_pos1"
+      src="./public/images/lineBackground.svg"
+      alt="line background"
+    />
+    <img
+      class="backgroundLine backgroundLine__tablet_pos1"
+      src="./public/images/backgroundLinesTablet/first.svg"
+      alt="line background"
+    />
+    <img
+      class="backgroundLine backgroundLine__mobile_pos1"
+      src="./public/images/backgroundLinesMobile/first.svg"
+      alt="line background"
+    />
+    <img
+      class="backgroundLine backgroundLine_pos2"
+      src="./public/images/line2Background.svg"
+      alt="line background"
+    />
+    <img
+      class="backgroundLine backgroundLine__tablet_pos2"
+      src="./public/images/backgroundLinesTablet/second.svg"
+      alt="line background"
+    />
+    <img
+      class="backgroundLine backgroundLine__mobile_pos2"
+      src="./public/images/backgroundLinesMobile/second.svg"
+      alt="line background"
+    />
+    <img
+      class="backgroundLine backgroundLine__mobile_pos3"
+      src="./public/images/backgroundLinesMobile/third.svg"
+      alt="line background"
+    />
+    <img
+      class="backgroundLine backgroundLine_posWebinars"
+      src="./public/images/webinars/threeLinesBackground.svg"
+      alt="line background"
+    />
+    <img
+      class="backgroundLine backgroundLine__tablet_posWebinars"
+      src="./public/images/backgroundLinesTablet/webinars.svg"
+      alt="line background"
+    />
+  </body>
+  <script src="./js/index.js"></script>
+</html>

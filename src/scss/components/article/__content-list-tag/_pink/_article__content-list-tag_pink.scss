@@ -1,0 +1,7 @@
+.article__content-list-tag_pink {
+  color: map-get($textColors, pink-dark);
+  &:first-of-type {
+    color: map-get($mainColors, black-dark);
+    background-color: map-get($tagColors, pink-light);
+  }
+}

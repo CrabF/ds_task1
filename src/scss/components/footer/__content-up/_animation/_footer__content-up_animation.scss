@@ -1,0 +1,4 @@
+.footer__content-up_animation::after {
+  transform: rotate(180deg);
+  transition: transform 0.5s ease;
+}
